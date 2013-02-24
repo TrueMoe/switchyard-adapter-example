@@ -2,7 +2,7 @@ package com.objectbay.switchyard.adapter.example;
 
 import org.switchyard.component.bean.Service;
 
-import com.objectbay.switchyard.adapter.example.domain.Order;
+import com.objectbay.switchyard.adapter.example.domain.Order2;
 
 @Service(OrderingService2.class)
 public class OrderingServiceBean implements OrderingService2 {
@@ -12,13 +12,15 @@ public class OrderingServiceBean implements OrderingService2 {
 //		order.setOrdered(true);
 //	}
 	@Override
-	public void orderIt(Order order) {
+	public boolean orderIt(Order2 order) {
 		order.setOrdered(true);
+		return order.isOrdered();
 	}
 
 	@Override
-	public void cancel(Order order) {
+	public boolean cancel(Order2 order) {
 		order.setOrdered(false);
+		return order.isOrdered();
 	}
 
 }

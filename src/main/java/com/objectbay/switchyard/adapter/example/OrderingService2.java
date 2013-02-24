@@ -1,10 +1,10 @@
 package com.objectbay.switchyard.adapter.example;
 
-import com.objectbay.switchyard.adapter.example.domain.Order;
+import com.objectbay.switchyard.adapter.example.domain.Order2;
 
 public interface OrderingService2 {
 	
-	void orderIt(Order order);
+	boolean orderIt(Order2 order);
 	
-	void cancel(Order order);
+	boolean cancel(Order2 order);
 }

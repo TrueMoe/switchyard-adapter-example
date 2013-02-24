@@ -4,7 +4,7 @@ import com.objectbay.switchyard.adapter.example.domain.Order;
 
 public interface OrderingService {
 
-	void order(Order order);
+	boolean order(Order order);
 	
-	void cancel(Order order);
+	boolean cancel(Order order);
 }

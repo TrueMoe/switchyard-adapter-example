@@ -3,6 +3,7 @@ package com.objectbay.switchyard.adapter.example;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.switchyard.Message;
 import org.switchyard.component.test.mixins.cdi.CDIMixIn;
 import org.switchyard.test.Invoker;
 import org.switchyard.test.ServiceOperation;
@@ -22,17 +23,17 @@ public class OrderingServiceTest {
 	public void testOrder() throws Exception {
 		System.out.println("Test OrderingService Version 1 - order");
 		Order message = new Order();
-		service.operation("order").sendInOnly(message);
+		Message response = service.operation("order").sendInOut(message);
 
-		Assert.assertTrue("is ordered", message.isOrdered());
+		Assert.assertTrue("is ordered", response.getContent(Boolean.class));
 	}
 	
 	@Test
 	public void testCancel() throws Exception {
 		System.out.println("Test OrderingService Version 1 - cancel");
 		Order message = new Order();
-		service.operation("cancel").sendInOnly(message);
+		Message response = service.operation("cancel").sendInOut(message);
 
-		Assert.assertFalse("cancel order", message.isOrdered());
+		Assert.assertFalse("cancel order", response.getContent(Boolean.class));
 	}
 }
