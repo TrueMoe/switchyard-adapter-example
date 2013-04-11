@@ -9,7 +9,7 @@
 	<name>SwitchYard adapter example</name>
 	<description>Example for the adapter implementation for SwitchYard</description>
 	<properties>
-		<switchyard.version>0.8.0-SNAPSHOT</switchyard.version>
+		<switchyard.version>1.0.0-SNAPSHOT</switchyard.version>
 	</properties>
 	<dependencies>
 		<dependency>
