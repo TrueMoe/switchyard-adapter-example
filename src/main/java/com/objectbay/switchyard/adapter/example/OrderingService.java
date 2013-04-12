@@ -7,4 +7,8 @@ public interface OrderingService {
 	boolean order(Order order);
 	
 	boolean cancel(Order order);
+	
+	void outputTypeAdded(Order order);
+	
+	void faultCanBeAdded(Order order);
 }

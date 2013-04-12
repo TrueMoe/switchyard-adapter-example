@@ -7,10 +7,6 @@ import com.objectbay.switchyard.adapter.example.domain.Order2;
 @Service(OrderingService2.class)
 public class OrderingServiceBean implements OrderingService2 {
 
-//	@Override
-//	public void order(Order order) {
-//		order.setOrdered(true);
-//	}
 	@Override
 	public boolean orderIt(Order2 order) {
 		order.setOrdered(true);
@@ -23,4 +19,17 @@ public class OrderingServiceBean implements OrderingService2 {
 		return order.isOrdered();
 	}
 
+	@Override
+	public Order2 outputTypeAdded(Order2 order) {
+		orderIt(order);
+		return order;
+	}
+
+	@Override
+	public boolean faultCanBeAdded(Order2 order) throws Order2Fault {
+		if (order.getName() == null || order.isOrdered()) { // check added in service contract version 2
+			throw new Order2Fault("Invalid order: " + order.getName());
+		}
+		return orderIt(order);
+	}
 }
