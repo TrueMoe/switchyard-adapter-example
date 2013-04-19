@@ -10,8 +10,8 @@ import org.switchyard.component.bean.Service;
 
 @Service(ServiceContractV2.class)
 public class ServiceContractV2Bean implements ServiceContractV2 {
-	@Inject @Reference
-	InternalServiceContract service;
+	@Inject @Reference("InternalService")
+	InternalService service;
 	
 	@Override
 	public boolean operationCanBeAdded() {
@@ -65,8 +65,8 @@ public class ServiceContractV2Bean implements ServiceContractV2 {
 	}
 
 	@Override
-	public boolean internalFaultChange(Boolean throwException)  throws FaultV2{
-		return service.fault(throwException);
+	public boolean internalFaultChange(Boolean throwException) throws FaultV2 {
+		return service.callInteralFaultMethod(false);
 	}
 
 }
