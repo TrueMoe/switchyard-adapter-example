@@ -18,11 +18,11 @@ public interface ServiceContractV2 {
 	/**
 	 * Consumers of service contract v2 have to handle the new fault type. 
 	 * 
-	 * @param throwException Determines whether an error should be triggered.
-	 * @return true
+	 * @param value If null, throw FaultV2.
+	 * @return value
 	 * @throws FaultV2 Fault type of service contract v2.
 	 */
-	boolean faultCanChange(Boolean throwException) throws FaultV2;
+	Integer faultCanChange(Integer value)  throws FaultV2;
 
 	/**
 	 * The operation name in service contract v1 changed.
@@ -82,6 +82,4 @@ public interface ServiceContractV2 {
 	 * @return true
 	 */
 	boolean faultCanBeRemoved();
-	
-	boolean internalFaultChange(Boolean throwException) throws FaultV2;
 }

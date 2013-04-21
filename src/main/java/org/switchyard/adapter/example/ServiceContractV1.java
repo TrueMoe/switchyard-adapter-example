@@ -85,5 +85,5 @@ public interface ServiceContractV1 {
 	 * 
 	 * @throws FaultV1 Fault type of service contract v1.
 	 */
-	boolean faultCanChange() throws FaultV1;
+	Integer faultCanChange(Integer value) throws FaultV1;
 }

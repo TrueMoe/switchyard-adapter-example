@@ -1,7 +1,6 @@
 package org.switchyard.adapter.example;
 
 import org.junit.Assert;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.switchyard.Message;
@@ -96,26 +95,20 @@ public class ServiceContractV2Test {
 	
 	@Test
 	public void testFaultCanChange() throws Exception {
-		Message response = service.operation("faultCanChange").sendInOut(false);
+		Message response = service.operation("faultCanChange").sendInOut(Integer.MAX_VALUE);
 		// validate the results
-		Assert.assertTrue("V2: faultCanChange", response.getContent(Boolean.class));
+		Assert.assertEquals("V2: faultCanChange", Integer.MAX_VALUE, response.getContent(Integer.class).intValue());
 	}
 	
 	@Test
 	public void testFault_FaultCanChange() throws Exception {
 		try {
-			service.operation("faultCanChange").sendInOut(true);
+			service.operation("faultCanChange").sendInOut(null);
 			Assert.fail("V2: faultCanChange");
 		} catch (InvocationFaultException e) {
 			BeanComponentException bce = (BeanComponentException) e.getCause();
 			Assert.assertEquals(FaultV2.class, bce.getCause().getClass());
 			Assert.assertEquals("Should throw exception", bce.getCause().getMessage());
 		}
-	}
-
-	@Test
-	@Ignore
-	public void testInternalFaultChange() {
-		service.operation("internalFaultChange").sendInOut(true);
 	}
 }

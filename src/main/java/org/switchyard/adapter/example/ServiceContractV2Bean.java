@@ -1,17 +1,12 @@
 package org.switchyard.adapter.example;
 
-import javax.inject.Inject;
-
 import org.switchyard.adapter.example.domain.InputTypeV2;
 import org.switchyard.adapter.example.domain.OutputTypeV2;
 import org.switchyard.adapter.example.fault.FaultV2;
-import org.switchyard.component.bean.Reference;
 import org.switchyard.component.bean.Service;
 
 @Service(ServiceContractV2.class)
 public class ServiceContractV2Bean implements ServiceContractV2 {
-	@Inject @Reference("InternalService")
-	InternalService service;
 	
 	@Override
 	public boolean operationCanBeAdded() {
@@ -57,16 +52,11 @@ public class ServiceContractV2Bean implements ServiceContractV2 {
 	}
 
 	@Override
-	public boolean faultCanChange(Boolean throwException) throws FaultV2 {
-		if (throwException) {
+	public Integer faultCanChange(Integer value) throws FaultV2 {
+		if (value == null) {
 			throw new FaultV2("Should throw exception");
 		}
-		return true;
-	}
-
-	@Override
-	public boolean internalFaultChange(Boolean throwException) throws FaultV2 {
-		return service.callInteralFaultMethod(false);
+		return value;
 	}
 
 }

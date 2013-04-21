@@ -1,7 +1,8 @@
 package org.switchyard.adapter.example;
 
+import javax.xml.namespace.QName;
+
 import org.junit.Assert;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.switchyard.Message;
@@ -11,6 +12,7 @@ import org.switchyard.adapter.example.fault.FaultV1;
 import org.switchyard.adapter.example.fault.FaultV2;
 import org.switchyard.component.bean.BeanComponentException;
 import org.switchyard.component.test.mixins.cdi.CDIMixIn;
+import org.switchyard.metadata.java.JavaService;
 import org.switchyard.test.InvocationFaultException;
 import org.switchyard.test.Invoker;
 import org.switchyard.test.ServiceOperation;
@@ -102,21 +104,21 @@ public class ServiceContractV1Test {
 	
 	@Test
 	public void testFaultCanChange() throws Exception {
-		Message response = service.operation("faultCanChange").sendInOut(false);
+		Message response = service.operation("faultCanChange").sendInOut(Integer.MAX_VALUE);
 		// validate the results
-		Assert.assertTrue("V1: faultCanChange", response.getContent(Boolean.class));
+		Assert.assertEquals("V1: faultCanChange", Integer.MAX_VALUE, response.getContent(Integer.class).intValue());
 	}
 	
 	@Test
-	@Ignore
 	public void testFault_FaultCanChange() throws Exception {
 		try {
-			service.operation("faultCanChange").sendInOut(true);
+			QName faultType = JavaService.toMessageType(FaultV1.class);
+			service.operation("faultCanChange").expectedFaultType(faultType).sendInOut(null);
 			Assert.fail("V1: faultCanChange");
-		} catch (InvocationFaultException e) {
-			BeanComponentException bce = (BeanComponentException) e.getCause();
-			Assert.assertEquals(FaultV1.class, bce.getCause().getClass());
-			Assert.assertEquals("Should throw exception", bce.getCause().getMessage());
+		} catch (Exception e) {
+			Assert.assertEquals(FaultV1.class, e.getCause().getClass());
+			FaultV1 fault = (FaultV1) e.getCause();
+			Assert.assertEquals("Should throw exception", fault.getMessage());
 		}
 	}
 

@@ -95,6 +95,7 @@
 				</executions>
 				<configuration>
 					<scannerClassNames>
+						<!-- <param>org.switchyard.component.bean.config.model.BeanSwitchYardScanner</param> -->
 						<param>org.switchyard.transform.config.model.TransformSwitchYardScanner</param>
 						<param>org.switchyard.adapter.config.model.AdapterSwitchYardScanner</param>
 					</scannerClassNames>

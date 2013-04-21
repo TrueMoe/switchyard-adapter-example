@@ -1,39 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<switchyard xmlns="urn:switchyard-config:switchyard:1.0" xmlns:_1="urn:switchyard-config:adapter:1.0" xmlns:bean="urn:switchyard-component-bean:config:1.0" xmlns:camel="urn:switchyard-component-camel:config:1.0" xmlns:sca="http://docs.oasis-open.org/ns/opencsa/sca/200912" xmlns:transform="urn:switchyard-config:transform:1.0" name="switchyard.adapter.example" targetNamespace="urn:com.objectbay:switchyard.adapter.example:0.0.1-SNAPSHOT">
-  <sca:composite name="switchyard.adapter.example" targetNamespace="urn:com.objectbay:switchyard.adapter.example:0.0.1-SNAPSHOT">
-    <sca:service name="ServiceContractV2" promote="ServiceContractV2Bean/ServiceContractV2">
-      <sca:interface.java interface="org.switchyard.adapter.example.ServiceContractV2"/>
-    </sca:service>
-    <sca:service name="ServiceContractV1" promote="ServiceContractV2Bean/ServiceContractV2">
-      <sca:interface.java interface="org.switchyard.adapter.example.ServiceContractV1"/>
-    </sca:service>
-    <sca:component name="ServiceContractV2Bean">
-      <bean:implementation.bean class="org.switchyard.adapter.example.ServiceContractV2Bean"/>
-      <sca:service name="ServiceContractV2">
-        <sca:interface.java interface="org.switchyard.adapter.example.ServiceContractV2"/>
-      </sca:service>
-      <sca:reference name="InternalService">
-        <sca:interface.java interface="org.switchyard.adapter.example.InternalService"/>
-      </sca:reference>
-    </sca:component>
-    <sca:component name="InternalServiceBean">
-      <bean:implementation.bean class="org.switchyard.adapter.example.InternalServiceBean"/>
-      <sca:service name="InternalService">
-        <sca:interface.java interface="org.switchyard.adapter.example.InternalService"/>
-      </sca:service>
-    </sca:component>
-  </sca:composite>
-  <transforms>
-    <transform:transform.java from="java:org.switchyard.adapter.example.domain.InputTypeV1" to="java:org.switchyard.adapter.example.domain.InputTypeV2" class="org.switchyard.adapter.example.transformers.InputTypeTransformer"/>
-    <transform:transform.java from="java:org.switchyard.adapter.example.domain.OutputTypeV2" to="java:org.switchyard.adapter.example.domain.OutputTypeV1" class="org.switchyard.adapter.example.transformers.OutputTypeTransformer"/>
-    <transform:transform.java from="java:org.switchyard.adapter.example.fault.FaultV2" to="java:org.switchyard.adapter.example.fault.FaultV1" class="org.switchyard.adapter.example.transformers.FaultTypeTransformer"/>
-    <transform:transform.java from="java:org.switchyard.adapter.example.fault.InternalFault" to="java:org.switchyard.adapter.example.fault.FaultV2" class="org.switchyard.adapter.example.transformers.InternalFaultTypeTransformer"/>
-  </transforms>
-  <adapters>
-    <adapt.java xmlns="urn:switchyard-config:adapter:1.0"
-      from="{urn:com.objectbay:switchyard.adapter.example:0.0.1-SNAPSHOT}ServiceContractV1"
-      to="{urn:com.objectbay:switchyard.adapter.example:0.0.1-SNAPSHOT}ServiceContractV2"
-      class="org.switchyard.adapter.example.adapters.ServiceContractAdapter"
-    />
-  </adapters>
+<switchyard xmlns="urn:switchyard-config:switchyard:1.0" xmlns:bean="urn:switchyard-component-bean:config:1.0" xmlns:sca="http://docs.oasis-open.org/ns/opencsa/sca/200912" xmlns:transform="urn:switchyard-config:transform:1.0" name="switchyard-adapter-example" targetNamespace="urn:com.objectbay:switchyard.adapter.example:0.0.1-SNAPSHOT">
+   <composite xmlns="http://docs.oasis-open.org/ns/opencsa/sca/200912" name="switchyard.adapter.example" targetNamespace="urn:com.objectbay:switchyard.adapter.example:0.0.1-SNAPSHOT">
+        <sca:service name="ServiceContractV2" promote="ServiceContractV2Bean/ServiceContractV2">
+            <sca:interface.java interface="org.switchyard.adapter.example.ServiceContractV2"/>
+        </sca:service>
+        <sca:service name="ServiceContractV1" promote="ServiceContractV2Bean/ServiceContractV2">
+            <sca:interface.java interface="org.switchyard.adapter.example.ServiceContractV1"/>
+        </sca:service>
+        <sca:component name="ServiceContractV2Bean">
+            <bean:implementation.bean class="org.switchyard.adapter.example.ServiceContractV2Bean"/>
+            <sca:service name="ServiceContractV2">
+                <sca:interface.java interface="org.switchyard.adapter.example.ServiceContractV2"/>
+            </sca:service>
+        </sca:component>
+        <component name="ServiceContractV2">
+            <implementation.bean xmlns="urn:switchyard-component-bean:config:1.0" class="org.switchyard.adapter.example.ServiceContractV2Bean"/>
+            <service name="ServiceContractV2">
+                <interface.java interface="org.switchyard.adapter.example.ServiceContractV2"/>
+            </service>
+        </component>
+    </composite>
+    <transforms>
+        <transform.java xmlns="urn:switchyard-config:transform:1.0" class="org.switchyard.adapter.example.transformers.InputTypeTransformer" from="java:org.switchyard.adapter.example.domain.InputTypeV1" to="java:org.switchyard.adapter.example.domain.InputTypeV2"/>
+        <transform.java xmlns="urn:switchyard-config:transform:1.0" class="org.switchyard.adapter.example.transformers.OutputTypeTransformer" from="java:org.switchyard.adapter.example.domain.OutputTypeV2" to="java:org.switchyard.adapter.example.domain.OutputTypeV1"/>
+        <transform.java xmlns="urn:switchyard-config:transform:1.0" class="org.switchyard.adapter.example.transformers.HandlerExceptionTransformer" from="java:org.switchyard.HandlerException" to="java:org.switchyard.adapter.example.fault.FaultV2"/>
+        <transform.java xmlns="urn:switchyard-config:transform:1.0" class="org.switchyard.adapter.example.transformers.FaultTypeTransformer" from="java:org.switchyard.adapter.example.fault.FaultV2" to="java:org.switchyard.adapter.example.fault.FaultV1"/>
+    </transforms>
+    <adapters>
+        <adapt.java xmlns="urn:switchyard-config:adapter:1.0" class="org.switchyard.adapter.example.adapters.ServiceContractAdapter" from="{urn:com.objectbay:switchyard.adapter.example:0.0.1-SNAPSHOT}ServiceContractV1" to="{urn:com.objectbay:switchyard.adapter.example:0.0.1-SNAPSHOT}ServiceContractV2"/>
+    </adapters>
 </switchyard>
