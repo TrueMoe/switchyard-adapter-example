@@ -34,8 +34,8 @@ public class ServiceContractV2Bean implements ServiceContractV2 {
 	}
 
 	@Override
-	public Boolean outputTypeCanBeRemoved() {
-		return true;
+	public void outputTypeCanBeRemoved() {
+		// not supported
 	}
 
 	@Override

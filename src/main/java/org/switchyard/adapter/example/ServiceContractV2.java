@@ -60,7 +60,7 @@ public interface ServiceContractV2 {
 	 * 
 	 * @return true
 	 */
-	Boolean outputTypeCanBeRemoved();
+	void outputTypeCanBeRemoved();
 
 	/**
 	 * By adding an exception to service contract v2, the service might become

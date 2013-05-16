@@ -15,11 +15,6 @@
         <soap:wsdlPort>ServiceContractV2Port</soap:wsdlPort>
         <soap:contextPath>switchyard-adapter-example</soap:contextPath>
       </soap:binding.soap>
-      <!-- <soap:binding.soap>
-        <soap:wsdl>ServiceContractV1.wsdl</soap:wsdl>
-        <soap:wsdlPort>ServiceContractV1Port</soap:wsdlPort>
-        <soap:contextPath>switchyard-adapter-example</soap:contextPath>
-      </soap:binding.soap> -->
       <sca:extensions>
          <adapter.java xmlns="urn:switchyard-config:adapter:1.0" class="org.switchyard.adapter.example.adapters.ServiceContractAdapter">
              <sca:interface.java xmlns="http://docs.oasis-open.org/ns/opencsa/sca/200912" interface="org.switchyard.adapter.example.ServiceContractV1" />
