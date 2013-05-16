@@ -7,7 +7,7 @@ import org.switchyard.metadata.ServiceOperation;
 
 public class ServiceContractAdapter {
 
-	@Adapter(service = "{urn:com.objectbay:switchyard.adapter.example:0.0.1-SNAPSHOT}ServiceContractV1", contract = ServiceContractV1.class)
+	@Adapter(contract = ServiceContractV1.class)
 	public ServiceOperation lookup(String consumerOperation, ServiceInterface targetInterface) {
 		if ("operationCanBeRemoved".equals(consumerOperation)) {
 			return targetInterface.getOperation("operationCanBeAdded");

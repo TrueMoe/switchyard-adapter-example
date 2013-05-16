@@ -9,12 +9,6 @@
     </sca:component>
     <sca:service name="ServiceContractV2PortType" promote="ServiceContractV2Bean/ServiceContractV2">
       <sca:interface.wsdl interface="ServiceContractV2.wsdl#wsdl.porttype(ServiceContractV2PortType)"/>
-      <soap:binding.soap>
-        <soap:contextMapper/>
-        <soap:wsdl>ServiceContractV2.wsdl</soap:wsdl>
-        <soap:wsdlPort>ServiceContractV2Port</soap:wsdlPort>
-        <soap:contextPath>switchyard-adapter-example</soap:contextPath>
-      </soap:binding.soap>
       <sca:extensions>
          <adapter.java xmlns="urn:switchyard-config:adapter:1.0" class="org.switchyard.adapter.example.adapters.ServiceContractAdapter">
              <sca:interface.java xmlns="http://docs.oasis-open.org/ns/opencsa/sca/200912" interface="org.switchyard.adapter.example.ServiceContractV1" />
