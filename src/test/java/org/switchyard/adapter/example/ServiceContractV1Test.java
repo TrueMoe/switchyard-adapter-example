@@ -23,7 +23,7 @@ import org.switchyard.test.SwitchYardTestCaseConfig;
 @SwitchYardTestCaseConfig(mixins = CDIMixIn.class, config = SwitchYardTestCaseConfig.SWITCHYARD_XML)
 public class ServiceContractV1Test {
 
-	@ServiceOperation("ServiceContractV1")
+	@ServiceOperation("ServiceContractV2")
 	private Invoker service;
 
 	@Test

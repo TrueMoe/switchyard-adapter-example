@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project activeEnvironment="Default" name="ServiceContractV1" resourceRoot="" soapui-version="4.5.1" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="ServiceContractV1SoapBinding" type="wsdl" bindingName="{urn:com.objectbay:switchyard.adapter.example:0.0.1-SNAPSHOT}ServiceContractV1SoapBinding" soapVersion="1_1" anonymous="optional" definition="http://localhost:8080/ServiceContractV1/ServiceContractV1?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://localhost:8080/ServiceContractV1/ServiceContractV1?wsdl"><con:part><con:url>http://localhost:8080/ServiceContractV1/ServiceContractV1?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="ServiceContractV1" targetNamespace="urn:com.objectbay:switchyard.adapter.example:0.0.1-SNAPSHOT" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="urn:com.objectbay:switchyard.adapter.example:0.0.1-SNAPSHOT" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <wsdl:types>
+    <xs:schema attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="urn:com.objectbay:switchyard.adapter.example:0.0.1-SNAPSHOT" xmlns="urn:com.objectbay:switchyard.adapter.example:0.0.1-SNAPSHOT" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:complexType name="inputTypeV1">
+        <xs:sequence/>
+      </xs:complexType>
+      <xs:complexType name="outputTypeV1">
+        <xs:sequence/>
+      </xs:complexType>
+      <xs:element name="FaultV1" type="FaultV1"/>
+      <xs:complexType name="FaultV1">
+        <xs:sequence/>
+      </xs:complexType>
+      <xs:element name="inputTypeCanChange" type="inputTypeCanChange"/>
+      <xs:complexType name="inputTypeCanChange">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="inputTypeV1" type="inputTypeV1"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="inputTypeCanChangeResponse" type="inputTypeCanChangeResponse"/>
+      <xs:complexType name="inputTypeCanChangeResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="boolean" type="xs:boolean"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="outputTypeCanChange" type="outputTypeCanChange"/>
+      <xs:complexType name="outputTypeCanChange">
+        <xs:sequence/>
+      </xs:complexType>
+      <xs:element name="outputTypeCanChangeResponse" type="outputTypeCanChangeResponse"/>
+      <xs:complexType name="outputTypeCanChangeResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="outputTypeV1" type="outputTypeV1"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="outputTypeCanBeAdded" type="outputTypeCanBeAdded"/>
+      <xs:complexType name="outputTypeCanBeAdded">
+        <xs:sequence/>
+      </xs:complexType>
+      <xs:element name="faultCanChange" type="faultCanChange"/>
+      <xs:complexType name="faultCanChange">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="integer" type="xs:int"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="faultCanChangeResponse" type="faultCanChangeResponse"/>
+      <xs:complexType name="faultCanChangeResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="integer" type="xs:int"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="operationCanBeRemoved" type="operationCanBeRemoved"/>
+      <xs:complexType name="operationCanBeRemoved">
+        <xs:sequence/>
+      </xs:complexType>
+      <xs:element name="operationCanBeRemovedResponse" type="operationCanBeRemovedResponse"/>
+      <xs:complexType name="operationCanBeRemovedResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="boolean" type="xs:boolean"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="faultCanBeRemoved" type="faultCanBeRemoved"/>
+      <xs:complexType name="faultCanBeRemoved">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="boolean" type="xs:boolean"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="faultCanBeRemovedResponse" type="faultCanBeRemovedResponse"/>
+      <xs:complexType name="faultCanBeRemovedResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="boolean" type="xs:boolean"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="operationNameCanChangeV1" type="operationNameCanChangeV1"/>
+      <xs:complexType name="operationNameCanChangeV1">
+        <xs:sequence/>
+      </xs:complexType>
+      <xs:element name="operationNameCanChangeV1Response" type="operationNameCanChangeV1Response"/>
+      <xs:complexType name="operationNameCanChangeV1Response">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="boolean" type="xs:boolean"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="faultCanBeAdded" type="faultCanBeAdded"/>
+      <xs:complexType name="faultCanBeAdded">
+        <xs:sequence>
+          <xs:element name="arg0" type="xs:boolean"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="faultCanBeAddedResponse" type="faultCanBeAddedResponse"/>
+      <xs:complexType name="faultCanBeAddedResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="boolean" type="xs:boolean"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="outputTypeCanBeRemoved" type="outputTypeCanBeRemoved"/>
+      <xs:complexType name="outputTypeCanBeRemoved">
+        <xs:sequence/>
+      </xs:complexType>
+      <xs:element name="outputTypeCanBeRemovedResponse" type="outputTypeCanBeRemovedResponse"/>
+      <xs:complexType name="outputTypeCanBeRemovedResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="boolean" type="xs:boolean"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="outputTypeCanBeAdded">
+    <wsdl:part element="tns:outputTypeCanBeAdded" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="outputTypeCanChangeResponse">
+    <wsdl:part element="tns:outputTypeCanChangeResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="inputTypeCanChangeResponse">
+    <wsdl:part element="tns:inputTypeCanChangeResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="operationCanBeRemoved">
+    <wsdl:part element="tns:operationCanBeRemoved" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="operationNameCanChangeV1">
+    <wsdl:part element="tns:operationNameCanChangeV1" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="faultCanChangeResponse">
+    <wsdl:part element="tns:faultCanChangeResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="outputTypeCanBeRemovedResponse">
+    <wsdl:part element="tns:outputTypeCanBeRemovedResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="outputTypeCanChange">
+    <wsdl:part element="tns:outputTypeCanChange" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="faultCanBeRemoved">
+    <wsdl:part element="tns:faultCanBeRemoved" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="outputTypeCanBeRemoved">
+    <wsdl:part element="tns:outputTypeCanBeRemoved" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="inputTypeCanChange">
+    <wsdl:part element="tns:inputTypeCanChange" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="faultCanBeRemovedResponse">
+    <wsdl:part element="tns:faultCanBeRemovedResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="FaultV1">
+    <wsdl:part element="tns:FaultV1" name="FaultV1"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="faultCanBeAdded">
+    <wsdl:part element="tns:faultCanBeAdded" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="faultCanBeAddedResponse">
+    <wsdl:part element="tns:faultCanBeAddedResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="operationCanBeRemovedResponse">
+    <wsdl:part element="tns:operationCanBeRemovedResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="operationNameCanChangeV1Response">
+    <wsdl:part element="tns:operationNameCanChangeV1Response" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="faultCanChange">
+    <wsdl:part element="tns:faultCanChange" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="ServiceContractV1PortType">
+    <wsdl:operation name="inputTypeCanChange">
+      <wsdl:input message="tns:inputTypeCanChange" name="inputTypeCanChange"></wsdl:input>
+      <wsdl:output message="tns:inputTypeCanChangeResponse" name="inputTypeCanChangeResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="outputTypeCanChange">
+      <wsdl:input message="tns:outputTypeCanChange" name="outputTypeCanChange"></wsdl:input>
+      <wsdl:output message="tns:outputTypeCanChangeResponse" name="outputTypeCanChangeResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="outputTypeCanBeAdded">
+      <wsdl:input message="tns:outputTypeCanBeAdded" name="outputTypeCanBeAdded"></wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="faultCanChange">
+      <wsdl:input message="tns:faultCanChange" name="faultCanChange"></wsdl:input>
+      <wsdl:output message="tns:faultCanChangeResponse" name="faultCanChangeResponse"></wsdl:output>
+      <wsdl:fault message="tns:FaultV1" name="FaultV1"></wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="operationCanBeRemoved">
+      <wsdl:input message="tns:operationCanBeRemoved" name="operationCanBeRemoved"></wsdl:input>
+      <wsdl:output message="tns:operationCanBeRemovedResponse" name="operationCanBeRemovedResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="faultCanBeRemoved">
+      <wsdl:input message="tns:faultCanBeRemoved" name="faultCanBeRemoved"></wsdl:input>
+      <wsdl:output message="tns:faultCanBeRemovedResponse" name="faultCanBeRemovedResponse"></wsdl:output>
+      <wsdl:fault message="tns:FaultV1" name="FaultV1"></wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="operationNameCanChangeV1">
+      <wsdl:input message="tns:operationNameCanChangeV1" name="operationNameCanChangeV1"></wsdl:input>
+      <wsdl:output message="tns:operationNameCanChangeV1Response" name="operationNameCanChangeV1Response"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="faultCanBeAdded">
+      <wsdl:input message="tns:faultCanBeAdded" name="faultCanBeAdded"></wsdl:input>
+      <wsdl:output message="tns:faultCanBeAddedResponse" name="faultCanBeAddedResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="outputTypeCanBeRemoved">
+      <wsdl:input message="tns:outputTypeCanBeRemoved" name="outputTypeCanBeRemoved"></wsdl:input>
+      <wsdl:output message="tns:outputTypeCanBeRemovedResponse" name="outputTypeCanBeRemovedResponse"></wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceContractV1SoapBinding" type="tns:ServiceContractV1PortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="inputTypeCanChange">
+      <soap:operation soapAction="inputTypeCanChange" style="document"/>
+      <wsdl:input name="inputTypeCanChange">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="inputTypeCanChangeResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="outputTypeCanChange">
+      <soap:operation soapAction="outputTypeCanChange" style="document"/>
+      <wsdl:input name="outputTypeCanChange">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="outputTypeCanChangeResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="outputTypeCanBeAdded">
+      <soap:operation soapAction="outputTypeCanBeAdded" style="document"/>
+      <wsdl:input name="outputTypeCanBeAdded">
+        <soap:body use="literal"/>
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="faultCanChange">
+      <soap:operation soapAction="faultCanChange" style="document"/>
+      <wsdl:input name="faultCanChange">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="faultCanChangeResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="FaultV1">
+        <soap:fault name="FaultV1" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="operationCanBeRemoved">
+      <soap:operation soapAction="operationCanBeRemoved" style="document"/>
+      <wsdl:input name="operationCanBeRemoved">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="operationCanBeRemovedResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="faultCanBeRemoved">
+      <soap:operation soapAction="faultCanBeRemoved" style="document"/>
+      <wsdl:input name="faultCanBeRemoved">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="faultCanBeRemovedResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="FaultV1">
+        <soap:fault name="FaultV1" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="operationNameCanChangeV1">
+      <soap:operation soapAction="operationNameCanChangeV1" style="document"/>
+      <wsdl:input name="operationNameCanChangeV1">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="operationNameCanChangeV1Response">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="faultCanBeAdded">
+      <soap:operation soapAction="faultCanBeAdded" style="document"/>
+      <wsdl:input name="faultCanBeAdded">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="faultCanBeAddedResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="outputTypeCanBeRemoved">
+      <soap:operation soapAction="outputTypeCanBeRemoved" style="document"/>
+      <wsdl:input name="outputTypeCanBeRemoved">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="outputTypeCanBeRemovedResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiceContractV1">
+    <wsdl:port binding="tns:ServiceContractV1SoapBinding" name="ServiceContractV1Port">
+      <soap:address location="http://localhost:8080/ServiceContractV1/ServiceContractV1"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://localhost:8080/switchyard-adapter-example/ServiceContractV2</con:endpoint></con:endpoints><con:operation isOneWay="false" action="faultCanBeAdded" name="faultCanBeAdded" bindingOperationName="faultCanBeAdded" type="Request-Response" outputName="faultCanBeAddedResponse" inputName="faultCanBeAdded" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/switchyard-adapter-example/ServiceContractV2</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:com.objectbay:switchyard.adapter.example:0.0.1-SNAPSHOT">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <urn:faultCanBeAdded>
+         <arg0>13</arg0>
+      </urn:faultCanBeAdded>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="faultCanBeAdded"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation isOneWay="false" action="faultCanBeRemoved" name="faultCanBeRemoved" bindingOperationName="faultCanBeRemoved" type="Request-Response" outputName="faultCanBeRemovedResponse" inputName="faultCanBeRemoved" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/switchyard-adapter-example/ServiceContractV2</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:com.objectbay:switchyard.adapter.example:0.0.1-SNAPSHOT">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <urn:faultCanBeRemoved>
+         <!--Optional:-->
+         <boolean>?</boolean>
+      </urn:faultCanBeRemoved>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="faultCanBeRemoved"/></con:call></con:operation><con:operation isOneWay="false" action="faultCanChange" name="faultCanChange" bindingOperationName="faultCanChange" type="Request-Response" outputName="faultCanChangeResponse" inputName="faultCanChange" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/switchyard-adapter-example/ServiceContractV2</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:com.objectbay:switchyard.adapter.example:0.0.1-SNAPSHOT">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <urn:faultCanChange>
+         <!--Optional:-->
+         <integer>?</integer>
+      </urn:faultCanChange>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="faultCanChange"/></con:call></con:operation><con:operation isOneWay="false" action="inputTypeCanChange" name="inputTypeCanChange" bindingOperationName="inputTypeCanChange" type="Request-Response" outputName="inputTypeCanChangeResponse" inputName="inputTypeCanChange" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/switchyard-adapter-example/ServiceContractV2</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:com.objectbay:switchyard.adapter.example:0.0.1-SNAPSHOT">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <urn:inputTypeCanChange>
+         <!--Optional:-->
+         <inputTypeV1/>
+      </urn:inputTypeCanChange>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="inputTypeCanChange"/></con:call></con:operation><con:operation isOneWay="false" action="operationCanBeRemoved" name="operationCanBeRemoved" bindingOperationName="operationCanBeRemoved" type="Request-Response" outputName="operationCanBeRemovedResponse" inputName="operationCanBeRemoved" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/switchyard-adapter-example/ServiceContractV2</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:com.objectbay:switchyard.adapter.example:0.0.1-SNAPSHOT">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <urn:operationCanBeRemoved/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="operationCanBeRemoved"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation isOneWay="false" action="operationNameCanChangeV1" name="operationNameCanChangeV1" bindingOperationName="operationNameCanChangeV1" type="Request-Response" outputName="operationNameCanChangeV1Response" inputName="operationNameCanChangeV1" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/switchyard-adapter-example/ServiceContractV2</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:com.objectbay:switchyard.adapter.example:0.0.1-SNAPSHOT">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <urn:operationNameCanChangeV1/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="operationNameCanChangeV1"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation isOneWay="false" action="outputTypeCanBeAdded" name="outputTypeCanBeAdded" bindingOperationName="outputTypeCanBeAdded" type="One-Way" inputName="outputTypeCanBeAdded" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/switchyard-adapter-example/ServiceContractV2</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:com.objectbay:switchyard.adapter.example:0.0.1-SNAPSHOT">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <urn:outputTypeCanBeAdded/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="outputTypeCanBeAdded"/></con:call></con:operation><con:operation isOneWay="false" action="outputTypeCanBeRemoved" name="outputTypeCanBeRemoved" bindingOperationName="outputTypeCanBeRemoved" type="Request-Response" outputName="outputTypeCanBeRemovedResponse" inputName="outputTypeCanBeRemoved" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/switchyard-adapter-example/ServiceContractV2</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:com.objectbay:switchyard.adapter.example:0.0.1-SNAPSHOT">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <urn:outputTypeCanBeRemoved/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="outputTypeCanBeRemoved"/></con:call></con:operation><con:operation isOneWay="false" action="outputTypeCanChange" name="outputTypeCanChange" bindingOperationName="outputTypeCanChange" type="Request-Response" outputName="outputTypeCanChangeResponse" inputName="outputTypeCanChange" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/switchyard-adapter-example/ServiceContractV2</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:com.objectbay:switchyard.adapter.example:0.0.1-SNAPSHOT">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <urn:outputTypeCanChange/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="outputTypeCanChange"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/></con:soapui-project>

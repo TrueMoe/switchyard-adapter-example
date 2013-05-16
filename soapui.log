@@ -1,0 +1,463 @@
+2013-05-09 14:24:29,433 INFO  [DefaultSoapUICore] initialized soapui-settings from [/Users/moe/Development/install/apps/soapui/soapui-settings.xml]
+2013-05-09 14:24:32,488 INFO  [SoapUI] Used java version: 1.7.0_21
+2013-05-09 14:25:20,566 INFO  [SchemaUtils] Added default schema from file:/Users/moe/Development/install/apps/soapui/bin/soapui-4.5.1.jar!/com/eviware/soapui/resources/xsds/xop.xsd with targetNamespace http://www.w3.org/2004/08/xop/include
+2013-05-09 14:25:20,613 INFO  [SchemaUtils] Added default schema from file:/Users/moe/Development/install/apps/soapui/bin/soapui-4.5.1.jar!/com/eviware/soapui/resources/xsds/XMLSchema.xsd with targetNamespace http://www.w3.org/2001/XMLSchema
+2013-05-09 14:25:20,614 INFO  [SchemaUtils] Added default schema from file:/Users/moe/Development/install/apps/soapui/bin/soapui-4.5.1.jar!/com/eviware/soapui/resources/xsds/xml.xsd with targetNamespace http://www.w3.org/XML/1998/namespace
+2013-05-09 14:25:20,615 INFO  [SchemaUtils] Added default schema from file:/Users/moe/Development/install/apps/soapui/bin/soapui-4.5.1.jar!/com/eviware/soapui/resources/xsds/swaref.xsd with targetNamespace http://ws-i.org/profiles/basic/1.1/xsd
+2013-05-09 14:25:20,616 INFO  [SchemaUtils] Added default schema from file:/Users/moe/Development/install/apps/soapui/bin/soapui-4.5.1.jar!/com/eviware/soapui/resources/xsds/xmime200505.xsd with targetNamespace http://www.w3.org/2005/05/xmlmime
+2013-05-09 14:25:20,616 INFO  [SchemaUtils] Added default schema from file:/Users/moe/Development/install/apps/soapui/bin/soapui-4.5.1.jar!/com/eviware/soapui/resources/xsds/xmime200411.xsd with targetNamespace http://www.w3.org/2004/11/xmlmime
+2013-05-09 14:25:20,618 INFO  [SchemaUtils] Added default schema from file:/Users/moe/Development/install/apps/soapui/bin/soapui-4.5.1.jar!/com/eviware/soapui/resources/xsds/soapEnvelope.xsd with targetNamespace http://schemas.xmlsoap.org/soap/envelope/
+2013-05-09 14:25:20,624 INFO  [SchemaUtils] Added default schema from file:/Users/moe/Development/install/apps/soapui/bin/soapui-4.5.1.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd with targetNamespace http://schemas.xmlsoap.org/soap/encoding/
+2013-05-09 14:25:20,626 INFO  [SchemaUtils] Added default schema from file:/Users/moe/Development/install/apps/soapui/bin/soapui-4.5.1.jar!/com/eviware/soapui/resources/xsds/soapEnvelope12.xsd with targetNamespace http://www.w3.org/2003/05/soap-envelope
+2013-05-09 14:25:20,631 INFO  [SchemaUtils] Added default schema from file:/Users/moe/Development/install/apps/soapui/bin/soapui-4.5.1.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd with targetNamespace http://www.w3.org/2003/05/soap-encoding
+2013-05-09 14:25:21,082 INFO  [SchemaUtils] Loading schema types from [http://localhost:8080/ServiceContractV2/ServiceContractV2?wsdl]
+2013-05-09 14:25:21,082 INFO  [SchemaUtils] Getting schema http://localhost:8080/ServiceContractV2/ServiceContractV2?wsdl
+2013-05-09 14:25:21,337 INFO  [WsdlImporter] Finding importer for {urn:com.objectbay:switchyard.adapter.example:0.0.1-SNAPSHOT}ServiceContractV2SoapBinding
+2013-05-09 14:25:21,341 INFO  [WsdlImporter] Importing binding {urn:com.objectbay:switchyard.adapter.example:0.0.1-SNAPSHOT}ServiceContractV2SoapBinding
+2013-05-09 14:25:21,366 INFO  [Soap11HttpBindingImporter] importing endpoint http://localhost:8080/ServiceContractV2/ServiceContractV2
+2013-05-09 14:25:21,410 INFO  [Soap11HttpBindingImporter] importing operation faultCanBeAdded
+2013-05-09 14:25:21,425 INFO  [Soap11HttpBindingImporter] importing operation faultCanBeRemoved
+2013-05-09 14:25:21,426 INFO  [Soap11HttpBindingImporter] importing operation faultCanChange
+2013-05-09 14:25:21,427 INFO  [Soap11HttpBindingImporter] importing operation inputTypeCanChange
+2013-05-09 14:25:21,427 INFO  [Soap11HttpBindingImporter] importing operation operationCanBeAdded
+2013-05-09 14:25:21,428 INFO  [Soap11HttpBindingImporter] importing operation operationNameCanChangeV2
+2013-05-09 14:25:21,428 INFO  [Soap11HttpBindingImporter] importing operation outputTypeCanBeAdded
+2013-05-09 14:25:21,429 INFO  [Soap11HttpBindingImporter] importing operation outputTypeCanBeRemoved
+2013-05-09 14:25:21,429 INFO  [Soap11HttpBindingImporter] importing operation outputTypeCanChange
+2013-05-09 14:25:34,814 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.outputTypeCanChange:Request 1] in 128ms (273 bytes)
+2013-05-10 10:46:28,819 INFO  [SchemaUtils] Loading schema types from [http://localhost:8080/ServiceContractV2/ServiceContractV2?wsdl]
+2013-05-10 10:46:28,819 INFO  [SchemaUtils] Getting schema http://localhost:8080/ServiceContractV2/ServiceContractV2?wsdl
+2013-05-10 10:46:28,958 INFO  [WsdlImporter] Finding importer for {urn:com.objectbay:switchyard.adapter.example:0.0.1-SNAPSHOT}ServiceContractV2SoapBinding
+2013-05-10 10:46:28,958 INFO  [WsdlImporter] Importing binding {urn:com.objectbay:switchyard.adapter.example:0.0.1-SNAPSHOT}ServiceContractV2SoapBinding
+2013-05-10 10:46:28,959 INFO  [Soap11HttpBindingImporter] importing endpoint http://localhost:8080/ServiceContractV2/ServiceContractV2
+2013-05-10 10:46:28,966 INFO  [Soap11HttpBindingImporter] importing operation faultCanBeAdded
+2013-05-10 10:46:28,967 INFO  [Soap11HttpBindingImporter] importing operation faultCanBeRemoved
+2013-05-10 10:46:28,967 INFO  [Soap11HttpBindingImporter] importing operation faultCanChange
+2013-05-10 10:46:28,968 INFO  [Soap11HttpBindingImporter] importing operation inputTypeCanChange
+2013-05-10 10:46:28,969 INFO  [Soap11HttpBindingImporter] importing operation operationCanBeAdded
+2013-05-10 10:46:28,969 INFO  [Soap11HttpBindingImporter] importing operation operationNameCanChangeV2
+2013-05-10 10:46:28,970 INFO  [Soap11HttpBindingImporter] importing operation outputTypeCanBeAdded
+2013-05-10 10:46:28,971 INFO  [Soap11HttpBindingImporter] importing operation outputTypeCanBeRemoved
+2013-05-10 10:46:28,971 INFO  [Soap11HttpBindingImporter] importing operation outputTypeCanChange
+2013-05-10 10:47:10,719 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.faultCanBeRemoved:Request 1] in 27346ms (273 bytes)
+2013-05-10 10:48:01,279 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.faultCanBeRemoved:Request 1] in 20ms (273 bytes)
+2013-05-10 10:49:42,587 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.operationNameCanChangeV2:Request 1] in 9ms (273 bytes)
+2013-05-10 11:00:18,045 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.operationNameCanChangeV2:Request 1] in 225ms (273 bytes)
+2013-05-10 11:53:40,205 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.operationNameCanChangeV2:Request 1] in 125ms (273 bytes)
+2013-05-10 11:58:13,413 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.operationNameCanChangeV2:Request 1] in 266ms (273 bytes)
+2013-05-10 12:00:07,624 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.operationNameCanChangeV2:Request 1] in 12ms (273 bytes)
+2013-05-10 12:00:08,954 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.operationNameCanChangeV2:Request 1] in 7ms (273 bytes)
+2013-05-10 12:00:09,801 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.operationNameCanChangeV2:Request 1] in 9ms (273 bytes)
+2013-05-10 12:00:10,301 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.operationNameCanChangeV2:Request 1] in 6ms (273 bytes)
+2013-05-10 12:00:10,901 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.operationNameCanChangeV2:Request 1] in 7ms (273 bytes)
+2013-05-10 12:00:11,529 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.operationNameCanChangeV2:Request 1] in 6ms (273 bytes)
+2013-05-10 12:00:12,407 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.operationNameCanChangeV2:Request 1] in 8ms (273 bytes)
+2013-05-10 12:00:12,929 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.operationNameCanChangeV2:Request 1] in 6ms (273 bytes)
+2013-05-10 12:00:13,202 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.operationNameCanChangeV2:Request 1] in 7ms (273 bytes)
+2013-05-10 12:00:13,478 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.operationNameCanChangeV2:Request 1] in 6ms (273 bytes)
+2013-05-10 12:00:13,818 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.operationNameCanChangeV2:Request 1] in 7ms (273 bytes)
+2013-05-10 12:00:14,082 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.operationNameCanChangeV2:Request 1] in 6ms (273 bytes)
+2013-05-10 12:00:14,618 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.operationNameCanChangeV2:Request 1] in 6ms (273 bytes)
+2013-05-10 12:00:15,139 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.operationNameCanChangeV2:Request 1] in 6ms (273 bytes)
+2013-05-10 12:00:15,941 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.operationNameCanChangeV2:Request 1] in 8ms (273 bytes)
+2013-05-10 12:02:54,011 INFO  [SchemaUtils] Loading schema types from [http://localhost:8080/ServiceContractV2/ServiceContractV2?wsdl]
+2013-05-10 12:02:54,011 INFO  [SchemaUtils] Getting schema http://localhost:8080/ServiceContractV2/ServiceContractV2?wsdl
+2013-05-10 12:02:54,127 INFO  [WsdlImporter] Finding importer for {urn:com.objectbay:switchyard.adapter.example:0.0.1-SNAPSHOT}ServiceContractV2SoapBinding
+2013-05-10 12:02:54,128 INFO  [WsdlImporter] Importing binding {urn:com.objectbay:switchyard.adapter.example:0.0.1-SNAPSHOT}ServiceContractV2SoapBinding
+2013-05-10 12:02:54,128 INFO  [Soap11HttpBindingImporter] importing endpoint http://localhost:8080/ServiceContractV2/ServiceContractV2
+2013-05-10 12:02:54,135 INFO  [Soap11HttpBindingImporter] importing operation faultCanBeAdded
+2013-05-10 12:02:54,136 INFO  [Soap11HttpBindingImporter] importing operation faultCanBeRemoved
+2013-05-10 12:02:54,137 INFO  [Soap11HttpBindingImporter] importing operation faultCanChange
+2013-05-10 12:02:54,138 INFO  [Soap11HttpBindingImporter] importing operation inputTypeCanChange
+2013-05-10 12:02:54,138 INFO  [Soap11HttpBindingImporter] importing operation operationCanBeAdded
+2013-05-10 12:02:54,139 INFO  [Soap11HttpBindingImporter] importing operation operationNameCanChangeV2
+2013-05-10 12:02:54,139 INFO  [Soap11HttpBindingImporter] importing operation outputTypeCanBeAdded
+2013-05-10 12:02:54,140 INFO  [Soap11HttpBindingImporter] importing operation outputTypeCanBeRemoved
+2013-05-10 12:02:54,140 INFO  [Soap11HttpBindingImporter] importing operation outputTypeCanChange
+2013-05-10 12:03:34,650 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.operationNameCanChangeV2:Request 1] in 10ms (273 bytes)
+2013-05-10 12:06:32,241 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.faultCanChange:Request 1] in 46ms (484 bytes)
+2013-05-10 12:09:34,639 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.faultCanChange:Request 1] in 10ms (273 bytes)
+2013-05-10 12:10:53,191 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.faultCanChange:Request 1] in 11ms (273 bytes)
+2013-05-10 12:12:56,195 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.faultCanChange:Request 1] in 8ms (273 bytes)
+2013-05-10 12:14:36,385 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.faultCanChange:Request 1] in 8ms (273 bytes)
+2013-05-10 12:14:42,980 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.faultCanChange:Request 1] in 6ms (273 bytes)
+2013-05-10 12:14:51,663 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.faultCanChange:Request 1] in 11ms (273 bytes)
+2013-05-10 12:15:28,697 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.faultCanChange:Request 1] in 12ms (273 bytes)
+2013-05-10 12:16:48,656 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.faultCanChange:Request 1] in 14ms (273 bytes)
+2013-05-10 12:16:50,700 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.faultCanChange:Request 1] in 7ms (273 bytes)
+2013-05-10 12:25:36,693 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.faultCanChange:Request 1] in 9ms (273 bytes)
+2013-05-10 12:30:57,350 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.faultCanChange:Request 1] in 8ms (1064 bytes)
+2013-05-10 12:31:25,274 ERROR [WsdlLoader] Failed to load url [http://localhost:8080/ServiceContractV2/ServiceContractV2?wsdl]
+2013-05-10 12:31:25,274 ERROR [SoapUI] An error occured [com.eviware.soapui.impl.support.definition.support.InvalidDefinitionException], see error log for details
+2013-05-10 12:31:25,284 ERROR [errorlog] com.eviware.soapui.impl.support.definition.support.InvalidDefinitionException
+com.eviware.soapui.impl.support.definition.support.InvalidDefinitionException
+	at com.eviware.soapui.impl.wsdl.support.wsdl.WsdlLoader.loadXmlObject(WsdlLoader.java:138)
+	at com.eviware.soapui.impl.wsdl.support.xsd.SchemaUtils.getDefinitionParts(SchemaUtils.java:535)
+	at com.eviware.soapui.impl.wsdl.support.xsd.SchemaUtils.getDefinitionParts(SchemaUtils.java:524)
+	at com.eviware.soapui.impl.support.definition.support.AbstractDefinitionCache.update(AbstractDefinitionCache.java:97)
+	at com.eviware.soapui.impl.support.definition.support.AbstractDefinitionContext$Loader.construct(AbstractDefinitionContext.java:226)
+	at com.eviware.soapui.support.swing.SwingWorkerDelegator.construct(SwingWorkerDelegator.java:46)
+	at com.eviware.soapui.support.swing.SwingWorker$2.run(SwingWorker.java:149)
+	at java.lang.Thread.run(Thread.java:722)
+2013-05-10 12:33:26,063 INFO  [SchemaUtils] Loading schema types from [http://localhost:8080/switchyard-adapter-example/ServiceContractV2?wsdl]
+2013-05-10 12:33:26,063 INFO  [SchemaUtils] Getting schema http://localhost:8080/switchyard-adapter-example/ServiceContractV2?wsdl
+2013-05-10 12:33:26,182 INFO  [WsdlImporter] Finding importer for {urn:com.objectbay:switchyard.adapter.example:0.0.1-SNAPSHOT}ServiceContractV2SoapBinding
+2013-05-10 12:33:26,182 INFO  [WsdlImporter] Importing binding {urn:com.objectbay:switchyard.adapter.example:0.0.1-SNAPSHOT}ServiceContractV2SoapBinding
+2013-05-10 12:33:26,183 INFO  [Soap11HttpBindingImporter] importing endpoint http://localhost:8080/switchyard-adapter-example/ServiceContractV2
+2013-05-10 12:33:26,190 INFO  [Soap11HttpBindingImporter] importing operation faultCanBeAdded
+2013-05-10 12:33:26,191 INFO  [Soap11HttpBindingImporter] importing operation faultCanBeRemoved
+2013-05-10 12:33:26,191 INFO  [Soap11HttpBindingImporter] importing operation faultCanChange
+2013-05-10 12:33:26,192 INFO  [Soap11HttpBindingImporter] importing operation inputTypeCanChange
+2013-05-10 12:33:26,193 INFO  [Soap11HttpBindingImporter] importing operation operationCanBeAdded
+2013-05-10 12:33:26,193 INFO  [Soap11HttpBindingImporter] importing operation operationNameCanChangeV2
+2013-05-10 12:33:26,193 INFO  [Soap11HttpBindingImporter] importing operation outputTypeCanBeAdded
+2013-05-10 12:33:26,194 INFO  [Soap11HttpBindingImporter] importing operation outputTypeCanBeRemoved
+2013-05-10 12:33:26,194 INFO  [Soap11HttpBindingImporter] importing operation outputTypeCanChange
+2013-05-10 12:33:45,109 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.faultCanChange:Request 1] in 11ms (299 bytes)
+2013-05-10 12:34:54,424 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.faultCanChange:Request 1] in 11ms (299 bytes)
+2013-05-10 12:36:57,410 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.faultCanChange:Request 1] in 26ms (229 bytes)
+2013-05-10 12:37:04,602 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.faultCanChange:Request 1] in 16ms (229 bytes)
+2013-05-10 12:45:26,992 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.faultCanChange:Request 1] in 9ms (229 bytes)
+2013-05-10 12:51:42,634 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.faultCanChange:Request 1] in 20ms (229 bytes)
+2013-05-10 12:52:10,910 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.outputTypeCanChange:Request 1] in 8ms (233 bytes)
+2013-05-10 12:52:35,501 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.faultCanBeAdded:Request 1] in 9ms (233 bytes)
+2013-05-10 12:58:29,094 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.faultCanBeAdded:Request 1] in 17ms (233 bytes)
+2013-05-10 12:58:32,648 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.faultCanChange:Request 1] in 7ms (229 bytes)
+2013-05-10 12:58:37,348 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.outputTypeCanChange:Request 1] in 8ms (233 bytes)
+2013-05-10 12:58:49,739 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.outputTypeCanBeRemoved:Request 1] in 11ms (247 bytes)
+2013-05-10 12:58:58,449 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.outputTypeCanBeAdded:Request 1] in 7ms (235 bytes)
+2013-05-10 12:59:16,282 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.operationNameCanChangeV2:Request 1] in 9ms (251 bytes)
+2013-05-10 12:59:29,060 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.operationCanBeAdded:Request 1] in 6ms (241 bytes)
+2013-05-10 12:59:38,946 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.faultCanBeRemoved:Request 1] in 7ms (237 bytes)
+2013-05-10 12:59:39,511 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.faultCanBeRemoved:Request 1] in 6ms (237 bytes)
+2013-05-10 12:59:44,952 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.faultCanBeAdded:Request 1] in 8ms (233 bytes)
+2013-05-10 13:17:49,259 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.faultCanBeAdded:Request 1] in 2ms (1091 bytes)
+2013-05-10 13:19:08,460 INFO  [SchemaUtils] Loading schema types from [http://localhost:8080/ServiceContractV2/ServiceContractV2?wsdl]
+2013-05-10 13:19:08,460 INFO  [SchemaUtils] Getting schema http://localhost:8080/ServiceContractV2/ServiceContractV2?wsdl
+2013-05-10 13:19:08,576 INFO  [WsdlImporter] Finding importer for {urn:com.objectbay:switchyard.adapter.example:0.0.1-SNAPSHOT}ServiceContractV2SoapBinding
+2013-05-10 13:19:08,576 INFO  [WsdlImporter] Importing binding {urn:com.objectbay:switchyard.adapter.example:0.0.1-SNAPSHOT}ServiceContractV2SoapBinding
+2013-05-10 13:19:08,577 INFO  [Soap11HttpBindingImporter] importing endpoint http://localhost:8080/ServiceContractV2/ServiceContractV2
+2013-05-10 13:19:08,583 INFO  [Soap11HttpBindingImporter] importing operation faultCanBeAdded
+2013-05-10 13:19:08,584 INFO  [Soap11HttpBindingImporter] importing operation faultCanBeRemoved
+2013-05-10 13:19:08,584 INFO  [Soap11HttpBindingImporter] importing operation faultCanChange
+2013-05-10 13:19:08,585 INFO  [Soap11HttpBindingImporter] importing operation inputTypeCanChange
+2013-05-10 13:19:08,586 INFO  [Soap11HttpBindingImporter] importing operation operationCanBeAdded
+2013-05-10 13:19:08,590 INFO  [Soap11HttpBindingImporter] importing operation operationNameCanChangeV2
+2013-05-10 13:19:08,590 INFO  [Soap11HttpBindingImporter] importing operation outputTypeCanBeAdded
+2013-05-10 13:19:08,591 INFO  [Soap11HttpBindingImporter] importing operation outputTypeCanBeRemoved
+2013-05-10 13:19:08,591 INFO  [Soap11HttpBindingImporter] importing operation outputTypeCanChange
+2013-05-10 13:19:18,835 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.faultCanBeAdded:Request 1] in 10ms (233 bytes)
+2013-05-10 13:20:26,063 INFO  [SchemaUtils] Loading schema types from [file:/Users/moe/Development/lang/github/switchyard-adapter-example/src/main/resources/ServiceContractV1.wsdl]
+2013-05-10 13:20:26,063 INFO  [SchemaUtils] Getting schema file:/Users/moe/Development/lang/github/switchyard-adapter-example/src/main/resources/ServiceContractV1.wsdl
+2013-05-10 13:20:26,173 INFO  [WsdlImporter] Finding importer for {urn:com.objectbay:switchyard.adapter.example:0.0.1-SNAPSHOT}ServiceContractV1SoapBinding
+2013-05-10 13:20:26,174 INFO  [WsdlImporter] Importing binding {urn:com.objectbay:switchyard.adapter.example:0.0.1-SNAPSHOT}ServiceContractV1SoapBinding
+2013-05-10 13:20:26,175 INFO  [Soap11HttpBindingImporter] importing endpoint http://localhost:8080/switchyard-adapter-example/ServiceContractV1
+2013-05-10 13:20:26,176 INFO  [Soap11HttpBindingImporter] importing operation faultCanBeAdded
+2013-05-10 13:20:26,177 INFO  [Soap11HttpBindingImporter] importing operation faultCanBeRemoved
+2013-05-10 13:20:26,178 INFO  [Soap11HttpBindingImporter] importing operation faultCanChange
+2013-05-10 13:20:26,179 INFO  [Soap11HttpBindingImporter] importing operation inputTypeCanChange
+2013-05-10 13:20:26,179 INFO  [Soap11HttpBindingImporter] importing operation operationCanBeRemoved
+2013-05-10 13:20:26,179 INFO  [Soap11HttpBindingImporter] importing operation operationNameCanChangeV1
+2013-05-10 13:20:26,180 INFO  [Soap11HttpBindingImporter] importing operation outputTypeCanBeAdded
+2013-05-10 13:20:26,180 INFO  [Soap11HttpBindingImporter] importing operation outputTypeCanBeRemoved
+2013-05-10 13:20:26,181 INFO  [Soap11HttpBindingImporter] importing operation outputTypeCanChange
+2013-05-10 13:20:44,157 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV1SoapBinding.faultCanBeAdded:Request 1] in 3ms (1091 bytes)
+2013-05-10 13:20:54,303 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV1SoapBinding.faultCanBeAdded:Request 1] in 3ms (1091 bytes)
+2013-05-10 13:22:13,212 INFO  [SchemaUtils] Loading schema types from [http://localhost:8080/ServiceContractV1/ServiceContractV1?wsdl]
+2013-05-10 13:22:13,212 INFO  [SchemaUtils] Getting schema http://localhost:8080/ServiceContractV1/ServiceContractV1?wsdl
+2013-05-10 13:22:13,293 INFO  [WsdlImporter] Finding importer for {urn:com.objectbay:switchyard.adapter.example:0.0.1-SNAPSHOT}ServiceContractV1SoapBinding
+2013-05-10 13:22:13,293 INFO  [WsdlImporter] Importing binding {urn:com.objectbay:switchyard.adapter.example:0.0.1-SNAPSHOT}ServiceContractV1SoapBinding
+2013-05-10 13:22:13,294 INFO  [Soap11HttpBindingImporter] importing endpoint http://localhost:8080/ServiceContractV1/ServiceContractV1
+2013-05-10 13:22:13,295 INFO  [Soap11HttpBindingImporter] importing operation faultCanBeAdded
+2013-05-10 13:22:13,296 INFO  [Soap11HttpBindingImporter] importing operation faultCanBeRemoved
+2013-05-10 13:22:13,297 INFO  [Soap11HttpBindingImporter] importing operation faultCanChange
+2013-05-10 13:22:13,297 INFO  [Soap11HttpBindingImporter] importing operation inputTypeCanChange
+2013-05-10 13:22:13,298 INFO  [Soap11HttpBindingImporter] importing operation operationCanBeRemoved
+2013-05-10 13:22:13,299 INFO  [Soap11HttpBindingImporter] importing operation operationNameCanChangeV1
+2013-05-10 13:22:13,299 INFO  [Soap11HttpBindingImporter] importing operation outputTypeCanBeAdded
+2013-05-10 13:22:13,300 INFO  [Soap11HttpBindingImporter] importing operation outputTypeCanBeRemoved
+2013-05-10 13:22:13,300 INFO  [Soap11HttpBindingImporter] importing operation outputTypeCanChange
+2013-05-10 13:22:21,658 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV1SoapBinding.faultCanBeAdded:Request 1] in 71ms (373 bytes)
+2013-05-10 13:24:13,682 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV1SoapBinding.faultCanBeAdded:Request 1] in 11ms (233 bytes)
+2013-05-10 13:24:54,742 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV1SoapBinding.operationNameCanChangeV1:Request 1] in 26ms (343 bytes)
+2013-05-10 13:24:57,796 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV1SoapBinding.operationCanBeRemoved:Request 1] in 27ms (340 bytes)
+2013-05-10 13:27:47,600 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.faultCanBeAdded:Request 1] in 256ms (484 bytes)
+2013-05-10 13:29:21,697 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV1SoapBinding.operationNameCanChangeV1:Request 1] in 222ms (343 bytes)
+2013-05-10 13:29:36,444 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.faultCanBeAdded:Request 1] in 89ms (373 bytes)
+2013-05-10 13:31:15,903 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.faultCanBeAdded:Request 1] in 19ms (233 bytes)
+2013-05-10 13:34:16,699 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.faultCanBeAdded:Request 1] in 13ms (233 bytes)
+2013-05-10 13:40:50,680 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.faultCanBeAdded:Request 1] in 140ms (233 bytes)
+2013-05-10 13:40:52,919 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.faultCanBeAdded:Request 1] in 10ms (233 bytes)
+2013-05-10 13:40:53,745 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.faultCanBeAdded:Request 1] in 9ms (233 bytes)
+2013-05-10 13:40:54,423 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.faultCanBeAdded:Request 1] in 9ms (233 bytes)
+2013-05-10 13:40:55,710 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.faultCanBeAdded:Request 1] in 10ms (233 bytes)
+2013-05-10 13:40:56,507 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.faultCanBeAdded:Request 1] in 9ms (233 bytes)
+2013-05-10 13:41:19,120 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV1SoapBinding.faultCanBeAdded:Request 1] in 15026ms (411 bytes)
+2013-05-10 13:41:55,831 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV1SoapBinding.faultCanBeAdded:Request 1] in 15013ms (411 bytes)
+2013-05-10 13:42:29,947 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV1SoapBinding.faultCanBeAdded:Request 1] in 15013ms (411 bytes)
+2013-05-10 13:49:03,440 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV1SoapBinding.faultCanBeAdded:Request 1] in 15019ms (411 bytes)
+2013-05-10 13:49:23,488 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.faultCanBeAdded:Request 1] in 12ms (233 bytes)
+2013-05-10 13:51:26,842 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.faultCanBeAdded:Request 1] in 204ms (233 bytes)
+2013-05-10 13:52:19,833 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV1SoapBinding.faultCanBeAdded:Request 1] in 15029ms (411 bytes)
+2013-05-10 13:55:29,433 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.faultCanBeAdded:Request 1] in 15ms (233 bytes)
+2013-05-10 13:55:48,073 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV1SoapBinding.faultCanBeAdded:Request 1] in 15020ms (411 bytes)
+2013-05-10 13:56:37,161 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV1SoapBinding.faultCanBeAdded:Request 1] in 15012ms (411 bytes)
+2013-05-10 14:02:39,240 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV1SoapBinding.faultCanBeAdded:Request 1] in 15020ms (411 bytes)
+2013-05-10 14:31:06,922 ERROR [WsdlSubmit] Exception in request: java.net.SocketTimeoutException: Read timed out
+2013-05-10 14:31:06,928 ERROR [SoapUI] An error occured [Read timed out], see error log for details
+2013-05-10 14:31:06,928 ERROR [errorlog] java.net.SocketTimeoutException: Read timed out
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:150)
+	at java.net.SocketInputStream.read(SocketInputStream.java:121)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:149)
+	at org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:110)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:264)
+	at org.apache.http.impl.conn.LoggingSessionInputBuffer.readLine(LoggingSessionInputBuffer.java:115)
+	at org.apache.http.impl.conn.DefaultResponseParser.parseHead(DefaultResponseParser.java:98)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:252)
+	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:281)
+	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:247)
+	at org.apache.http.impl.conn.AbstractClientConnAdapter.receiveResponseHeader(AbstractClientConnAdapter.java:219)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport$SoapUIHttpRequestExecutor.doReceiveResponse(HttpClientSupport.java:147)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:633)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:454)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:820)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:754)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport$Helper.execute(HttpClientSupport.java:236)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport.execute(HttpClientSupport.java:345)
+	at com.eviware.soapui.impl.wsdl.submit.transports.http.HttpClientRequestTransport.sendRequest(HttpClientRequestTransport.java:241)
+	at com.eviware.soapui.impl.wsdl.WsdlSubmit.run(WsdlSubmit.java:123)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:722)
+2013-05-10 14:31:06,933 INFO  [AbstractHttpRequestDesktopPanel] Error getting response for [ServiceContractV1SoapBinding.faultCanBeAdded:Request 1]; java.net.SocketTimeoutException: Read timed out
+2013-05-10 14:32:04,810 INFO  [AbstractHttpRequestDesktopPanel] [ServiceContractV1SoapBinding.faultCanBeAdded:Request 1] - CANCELED
+2013-05-10 14:32:23,756 INFO  [AbstractHttpRequestDesktopPanel] [ServiceContractV1SoapBinding.faultCanBeAdded:Request 1] - CANCELED
+2013-05-10 14:33:25,073 ERROR [WsdlSubmit] Exception in request: java.net.SocketTimeoutException: Read timed out
+2013-05-10 14:33:25,073 ERROR [SoapUI] An error occured [Read timed out], see error log for details
+2013-05-10 14:33:25,073 ERROR [errorlog] java.net.SocketTimeoutException: Read timed out
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:150)
+	at java.net.SocketInputStream.read(SocketInputStream.java:121)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:149)
+	at org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:110)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:264)
+	at org.apache.http.impl.conn.LoggingSessionInputBuffer.readLine(LoggingSessionInputBuffer.java:115)
+	at org.apache.http.impl.conn.DefaultResponseParser.parseHead(DefaultResponseParser.java:98)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:252)
+	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:281)
+	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:247)
+	at org.apache.http.impl.conn.AbstractClientConnAdapter.receiveResponseHeader(AbstractClientConnAdapter.java:219)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport$SoapUIHttpRequestExecutor.doReceiveResponse(HttpClientSupport.java:147)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:633)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:454)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:820)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:754)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport$Helper.execute(HttpClientSupport.java:236)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport.execute(HttpClientSupport.java:345)
+	at com.eviware.soapui.impl.wsdl.submit.transports.http.HttpClientRequestTransport.sendRequest(HttpClientRequestTransport.java:241)
+	at com.eviware.soapui.impl.wsdl.WsdlSubmit.run(WsdlSubmit.java:123)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:722)
+2013-05-10 14:33:25,077 INFO  [AbstractHttpRequestDesktopPanel] Error getting response for [ServiceContractV1SoapBinding.faultCanBeAdded:Request 1]; java.net.SocketTimeoutException: Read timed out
+2013-05-10 14:34:49,623 ERROR [WsdlSubmit] Exception in request: java.net.SocketTimeoutException: Read timed out
+2013-05-10 14:34:49,623 ERROR [SoapUI] An error occured [Read timed out], see error log for details
+2013-05-10 14:34:49,623 ERROR [errorlog] java.net.SocketTimeoutException: Read timed out
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:150)
+	at java.net.SocketInputStream.read(SocketInputStream.java:121)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:149)
+	at org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:110)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:264)
+	at org.apache.http.impl.conn.LoggingSessionInputBuffer.readLine(LoggingSessionInputBuffer.java:115)
+	at org.apache.http.impl.conn.DefaultResponseParser.parseHead(DefaultResponseParser.java:98)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:252)
+	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:281)
+	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:247)
+	at org.apache.http.impl.conn.AbstractClientConnAdapter.receiveResponseHeader(AbstractClientConnAdapter.java:219)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport$SoapUIHttpRequestExecutor.doReceiveResponse(HttpClientSupport.java:147)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:633)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:454)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:820)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:754)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport$Helper.execute(HttpClientSupport.java:236)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport.execute(HttpClientSupport.java:345)
+	at com.eviware.soapui.impl.wsdl.submit.transports.http.HttpClientRequestTransport.sendRequest(HttpClientRequestTransport.java:241)
+	at com.eviware.soapui.impl.wsdl.WsdlSubmit.run(WsdlSubmit.java:123)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:722)
+2013-05-10 14:34:49,627 INFO  [AbstractHttpRequestDesktopPanel] Error getting response for [ServiceContractV1SoapBinding.faultCanBeAdded:Request 1]; java.net.SocketTimeoutException: Read timed out
+2013-05-10 23:34:11,285 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV1SoapBinding.faultCanBeAdded:Request 1] in 21416ms (411 bytes)
+2013-05-10 23:35:30,880 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV1SoapBinding.faultCanBeAdded:Request 1] in 15014ms (411 bytes)
+2013-05-10 23:35:47,457 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.faultCanBeAdded:Request 1] in 3379ms (233 bytes)
+2013-05-10 23:36:01,045 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.faultCanBeAdded:Request 1] in 2887ms (233 bytes)
+2013-05-10 23:37:00,234 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV1SoapBinding.faultCanBeAdded:Request 1] in 15010ms (411 bytes)
+2013-05-10 23:40:10,661 ERROR [WsdlSubmit] Exception in request: java.net.SocketTimeoutException: Read timed out
+2013-05-10 23:40:10,666 ERROR [SoapUI] An error occured [Read timed out], see error log for details
+2013-05-10 23:40:10,667 ERROR [errorlog] java.net.SocketTimeoutException: Read timed out
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:150)
+	at java.net.SocketInputStream.read(SocketInputStream.java:121)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:149)
+	at org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:110)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:264)
+	at org.apache.http.impl.conn.LoggingSessionInputBuffer.readLine(LoggingSessionInputBuffer.java:115)
+	at org.apache.http.impl.conn.DefaultResponseParser.parseHead(DefaultResponseParser.java:98)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:252)
+	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:281)
+	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:247)
+	at org.apache.http.impl.conn.AbstractClientConnAdapter.receiveResponseHeader(AbstractClientConnAdapter.java:219)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport$SoapUIHttpRequestExecutor.doReceiveResponse(HttpClientSupport.java:147)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:633)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:454)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:820)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:754)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport$Helper.execute(HttpClientSupport.java:236)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport.execute(HttpClientSupport.java:345)
+	at com.eviware.soapui.impl.wsdl.submit.transports.http.HttpClientRequestTransport.sendRequest(HttpClientRequestTransport.java:241)
+	at com.eviware.soapui.impl.wsdl.WsdlSubmit.run(WsdlSubmit.java:123)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:722)
+2013-05-10 23:40:10,677 INFO  [AbstractHttpRequestDesktopPanel] Error getting response for [ServiceContractV1SoapBinding.faultCanBeAdded:Request 1]; java.net.SocketTimeoutException: Read timed out
+2013-05-11 22:51:16,640 ERROR [WsdlSubmit] Exception in request: java.net.SocketTimeoutException: Read timed out
+2013-05-11 22:51:16,640 ERROR [SoapUI] An error occured [Read timed out], see error log for details
+2013-05-11 22:51:16,640 ERROR [errorlog] java.net.SocketTimeoutException: Read timed out
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:150)
+	at java.net.SocketInputStream.read(SocketInputStream.java:121)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:149)
+	at org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:110)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:264)
+	at org.apache.http.impl.conn.LoggingSessionInputBuffer.readLine(LoggingSessionInputBuffer.java:115)
+	at org.apache.http.impl.conn.DefaultResponseParser.parseHead(DefaultResponseParser.java:98)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:252)
+	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:281)
+	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:247)
+	at org.apache.http.impl.conn.AbstractClientConnAdapter.receiveResponseHeader(AbstractClientConnAdapter.java:219)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport$SoapUIHttpRequestExecutor.doReceiveResponse(HttpClientSupport.java:147)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:633)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:454)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:820)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:754)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport$Helper.execute(HttpClientSupport.java:236)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport.execute(HttpClientSupport.java:345)
+	at com.eviware.soapui.impl.wsdl.submit.transports.http.HttpClientRequestTransport.sendRequest(HttpClientRequestTransport.java:241)
+	at com.eviware.soapui.impl.wsdl.WsdlSubmit.run(WsdlSubmit.java:123)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:722)
+2013-05-11 22:51:16,648 INFO  [AbstractHttpRequestDesktopPanel] Error getting response for [ServiceContractV2SoapBinding.faultCanBeAdded:Request 1]; java.net.SocketTimeoutException: Read timed out
+2013-05-12 10:06:34,018 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.faultCanBeAdded:Request 1] in 35ms (233 bytes)
+2013-05-12 21:21:59,105 ERROR [WsdlSubmit] Exception in request: java.net.SocketTimeoutException: Read timed out
+2013-05-12 21:21:59,106 ERROR [SoapUI] An error occured [Read timed out], see error log for details
+2013-05-12 21:21:59,106 ERROR [errorlog] java.net.SocketTimeoutException: Read timed out
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:150)
+	at java.net.SocketInputStream.read(SocketInputStream.java:121)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:149)
+	at org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:110)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:264)
+	at org.apache.http.impl.conn.LoggingSessionInputBuffer.readLine(LoggingSessionInputBuffer.java:115)
+	at org.apache.http.impl.conn.DefaultResponseParser.parseHead(DefaultResponseParser.java:98)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:252)
+	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:281)
+	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:247)
+	at org.apache.http.impl.conn.AbstractClientConnAdapter.receiveResponseHeader(AbstractClientConnAdapter.java:219)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport$SoapUIHttpRequestExecutor.doReceiveResponse(HttpClientSupport.java:147)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:633)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:454)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:820)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:754)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport$Helper.execute(HttpClientSupport.java:236)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport.execute(HttpClientSupport.java:345)
+	at com.eviware.soapui.impl.wsdl.submit.transports.http.HttpClientRequestTransport.sendRequest(HttpClientRequestTransport.java:241)
+	at com.eviware.soapui.impl.wsdl.WsdlSubmit.run(WsdlSubmit.java:123)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:722)
+2013-05-12 21:21:59,113 INFO  [AbstractHttpRequestDesktopPanel] Error getting response for [ServiceContractV1SoapBinding.faultCanBeAdded:Request 1]; java.net.SocketTimeoutException: Read timed out
+2013-05-12 21:30:19,440 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.faultCanBeAdded:Request 1] in 19ms (1114 bytes)
+2013-05-12 21:32:03,948 ERROR [WsdlLoader] Failed to load url [http://localhost:8080/ServiceContractV2/ServiceContractV2?wsdl]
+2013-05-12 21:32:03,949 ERROR [SoapUI] An error occured [com.eviware.soapui.impl.support.definition.support.InvalidDefinitionException], see error log for details
+2013-05-12 21:32:03,949 ERROR [errorlog] com.eviware.soapui.impl.support.definition.support.InvalidDefinitionException
+com.eviware.soapui.impl.support.definition.support.InvalidDefinitionException
+	at com.eviware.soapui.impl.wsdl.support.wsdl.WsdlLoader.loadXmlObject(WsdlLoader.java:138)
+	at com.eviware.soapui.impl.wsdl.support.xsd.SchemaUtils.getDefinitionParts(SchemaUtils.java:535)
+	at com.eviware.soapui.impl.wsdl.support.xsd.SchemaUtils.getDefinitionParts(SchemaUtils.java:524)
+	at com.eviware.soapui.impl.support.definition.support.AbstractDefinitionCache.update(AbstractDefinitionCache.java:97)
+	at com.eviware.soapui.impl.support.definition.support.AbstractDefinitionContext$Loader.construct(AbstractDefinitionContext.java:226)
+	at com.eviware.soapui.support.swing.SwingWorkerDelegator.construct(SwingWorkerDelegator.java:46)
+	at com.eviware.soapui.support.swing.SwingWorker$2.run(SwingWorker.java:149)
+	at java.lang.Thread.run(Thread.java:722)
+2013-05-12 21:32:09,602 ERROR [SoapUI] An error occured [com.eviware.soapui.impl.support.definition.support.InvalidDefinitionException], see error log for details
+2013-05-12 21:32:09,602 ERROR [errorlog] com.eviware.soapui.impl.support.definition.support.InvalidDefinitionException
+com.eviware.soapui.impl.support.definition.support.InvalidDefinitionException
+	at com.eviware.soapui.impl.wsdl.support.wsdl.WsdlLoader.loadXmlObject(WsdlLoader.java:138)
+	at com.eviware.soapui.impl.wsdl.support.xsd.SchemaUtils.getDefinitionParts(SchemaUtils.java:535)
+	at com.eviware.soapui.impl.wsdl.support.xsd.SchemaUtils.getDefinitionParts(SchemaUtils.java:524)
+	at com.eviware.soapui.impl.support.definition.support.AbstractDefinitionCache.update(AbstractDefinitionCache.java:97)
+	at com.eviware.soapui.impl.support.definition.support.AbstractDefinitionContext$Loader.construct(AbstractDefinitionContext.java:226)
+	at com.eviware.soapui.support.swing.SwingWorkerDelegator.construct(SwingWorkerDelegator.java:46)
+	at com.eviware.soapui.support.swing.SwingWorker$2.run(SwingWorker.java:149)
+	at java.lang.Thread.run(Thread.java:722)
+2013-05-12 21:32:20,321 INFO  [SchemaUtils] Loading schema types from [http://localhost:8080/switchyard-adapter-example/ServiceContractV2?wsdl]
+2013-05-12 21:32:20,321 INFO  [SchemaUtils] Getting schema http://localhost:8080/switchyard-adapter-example/ServiceContractV2?wsdl
+2013-05-12 21:32:20,445 INFO  [WsdlInterface] Synchronizing existing operation [inputTypeCanChange]
+2013-05-12 21:32:20,445 INFO  [WsdlInterface] Synchronizing existing operation [operationNameCanChangeV2]
+2013-05-12 21:32:20,446 INFO  [WsdlInterface] Synchronizing existing operation [outputTypeCanChange]
+2013-05-12 21:32:20,448 INFO  [WsdlInterface] Synchronizing existing operation [outputTypeCanBeAdded]
+2013-05-12 21:32:20,448 INFO  [WsdlInterface] Synchronizing existing operation [faultCanChange]
+2013-05-12 21:32:20,449 INFO  [WsdlInterface] Synchronizing existing operation [operationCanBeAdded]
+2013-05-12 21:32:20,450 INFO  [WsdlInterface] Synchronizing existing operation [faultCanBeRemoved]
+2013-05-12 21:32:20,450 INFO  [WsdlInterface] Synchronizing existing operation [faultCanBeAdded]
+2013-05-12 21:32:20,450 INFO  [WsdlInterface] Synchronizing existing operation [outputTypeCanBeRemoved]
+2013-05-12 21:32:33,678 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.faultCanBeAdded:Request 1] in 5168ms (233 bytes)
+2013-05-12 21:33:24,867 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV1SoapBinding.faultCanBeAdded:Request 1] in 17713ms (411 bytes)
+2013-05-13 10:42:53,666 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV2SoapBinding.faultCanBeAdded:Request 1] in 7304ms (233 bytes)
+2013-05-13 10:43:41,816 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV1SoapBinding.faultCanBeAdded:Request 1] in 29947ms (411 bytes)
+2013-05-13 10:44:07,864 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV1SoapBinding.faultCanBeAdded:Request 1] in 15011ms (411 bytes)
+2013-05-13 10:44:41,461 INFO  [AbstractHttpRequestDesktopPanel] Got response for [ServiceContractV1SoapBinding.faultCanBeAdded:Request 1] in 15011ms (411 bytes)
+2013-05-14 08:28:13,828 WARN  [errorlog] Failed to delete temporary project file; /Users/moe/Development/lang/github/switchyard-adapter-example/src/main/soapui/project-temp-4674780330614354672.xml
+2013-05-14 08:28:13,829 INFO  [WsdlProject] Saved project [ServiceContractV2] to [/Users/moe/Development/lang/github/switchyard-adapter-example/src/main/soapui/project.xml - 24455 bytes
+2013-05-14 08:28:42,137 WARN  [errorlog] Failed to delete temporary project file; /Users/moe/Development/lang/github/switchyard-adapter-example/src/main/soapui/project-temp-7402402491571672563.xml
+2013-05-14 08:28:42,138 INFO  [WsdlProject] Saved project [ServiceContractV1] to [/Users/moe/Development/lang/github/switchyard-adapter-example/src/main/soapui/projectV1.xml - 24475 bytes
+2013-05-14 08:28:42,139 INFO  [WorkspaceImpl] Saved workspace to [/Users/moe/Development/lang/github/switchyard-adapter-example/../../TestPBE-workspace.xml]
+2013-05-14 08:28:48,861 INFO  [DefaultSoapUICore] Settings saved to [/Users/moe/Development/install/apps/soapui/soapui-settings.xml]
+2013-05-14 08:28:48,865 WARN  [errorlog] Failed to delete temporary project file; /Users/moe/Development/lang/github/switchyard-adapter-example/src/main/soapui/project-temp-8001977884012445548.xml
+2013-05-14 08:28:48,865 INFO  [WsdlProject] Saved project [ServiceContractV2] to [/Users/moe/Development/lang/github/switchyard-adapter-example/src/main/soapui/project.xml - 24455 bytes
+2013-05-14 08:28:48,869 WARN  [errorlog] Failed to delete temporary project file; /Users/moe/Development/lang/github/switchyard-adapter-example/src/main/soapui/project-temp-7729102246644166265.xml
+2013-05-14 08:28:48,869 INFO  [WsdlProject] Saved project [ServiceContractV1] to [/Users/moe/Development/lang/github/switchyard-adapter-example/src/main/soapui/projectV1.xml - 24475 bytes
+2013-05-14 08:28:48,870 INFO  [WorkspaceImpl] Saved workspace to [/Users/moe/Development/lang/github/switchyard-adapter-example/../../TestPBE-workspace.xml]

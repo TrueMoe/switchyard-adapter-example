@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="ServiceContractV2" targetNamespace="urn:com.objectbay:switchyard.adapter.example:0.0.1-SNAPSHOT" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="urn:com.objectbay:switchyard.adapter.example:0.0.1-SNAPSHOT" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="urn:com.objectbay:switchyard.adapter.example:0.0.1-SNAPSHOT" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="urn:com.objectbay:switchyard.adapter.example:0.0.1-SNAPSHOT">
+  <xs:complexType name="inputTypeV2">
+    <xs:sequence/>
+  </xs:complexType>
+  <xs:complexType name="outputTypeV2">
+    <xs:sequence/>
+  </xs:complexType>
+  <xs:element name="FaultV2" type="FaultV2"/>
+  <xs:complexType name="FaultV2">
+    <xs:sequence/>
+  </xs:complexType>
+  <xs:element name="inputTypeCanChange" type="inputTypeCanChange"/>
+  <xs:complexType name="inputTypeCanChange">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="inputTypeV2" type="inputTypeV2"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="inputTypeCanChangeResponse" type="inputTypeCanChangeResponse"/>
+  <xs:complexType name="inputTypeCanChangeResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="boolean" type="xs:boolean"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="operationNameCanChangeV2" type="operationNameCanChangeV2"/>
+  <xs:complexType name="operationNameCanChangeV2">
+    <xs:sequence/>
+  </xs:complexType>
+  <xs:element name="operationNameCanChangeV2Response" type="operationNameCanChangeV2Response"/>
+  <xs:complexType name="operationNameCanChangeV2Response">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="boolean" type="xs:boolean"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="outputTypeCanChange" type="outputTypeCanChange"/>
+  <xs:complexType name="outputTypeCanChange">
+    <xs:sequence/>
+  </xs:complexType>
+  <xs:element name="outputTypeCanChangeResponse" type="outputTypeCanChangeResponse"/>
+  <xs:complexType name="outputTypeCanChangeResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="outputTypeV2" type="outputTypeV2"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="outputTypeCanBeAdded" type="outputTypeCanBeAdded"/>
+  <xs:complexType name="outputTypeCanBeAdded">
+    <xs:sequence/>
+  </xs:complexType>
+  <xs:element name="outputTypeCanBeAddedResponse" type="outputTypeCanBeAddedResponse"/>
+  <xs:complexType name="outputTypeCanBeAddedResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="outputTypeV2" type="outputTypeV2"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="faultCanChange" type="faultCanChange"/>
+  <xs:complexType name="faultCanChange">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="integer" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="faultCanChangeResponse" type="faultCanChangeResponse"/>
+  <xs:complexType name="faultCanChangeResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="integer" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="operationCanBeAdded" type="operationCanBeAdded"/>
+  <xs:complexType name="operationCanBeAdded">
+    <xs:sequence/>
+  </xs:complexType>
+  <xs:element name="operationCanBeAddedResponse" type="operationCanBeAddedResponse"/>
+  <xs:complexType name="operationCanBeAddedResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="boolean" type="xs:boolean"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="faultCanBeRemoved" type="faultCanBeRemoved"/>
+  <xs:complexType name="faultCanBeRemoved">
+    <xs:sequence/>
+  </xs:complexType>
+  <xs:element name="faultCanBeRemovedResponse" type="faultCanBeRemovedResponse"/>
+  <xs:complexType name="faultCanBeRemovedResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="boolean" type="xs:boolean"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="faultCanBeAdded" type="faultCanBeAdded"/>
+  <xs:complexType name="faultCanBeAdded">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="boolean" type="xs:boolean"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="faultCanBeAddedResponse" type="faultCanBeAddedResponse"/>
+  <xs:complexType name="faultCanBeAddedResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="boolean" type="xs:boolean"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="outputTypeCanBeRemoved" type="outputTypeCanBeRemoved"/>
+  <xs:complexType name="outputTypeCanBeRemoved">
+    <xs:sequence/>
+  </xs:complexType>
+  <xs:element name="outputTypeCanBeRemovedResponse" type="outputTypeCanBeRemovedResponse"/>
+  <xs:complexType name="outputTypeCanBeRemovedResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="boolean" type="xs:boolean"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+  </wsdl:types>
+  <wsdl:message name="outputTypeCanBeAdded">
+    <wsdl:part name="parameters" element="tns:outputTypeCanBeAdded">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="outputTypeCanChangeResponse">
+    <wsdl:part name="parameters" element="tns:outputTypeCanChangeResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="operationNameCanChangeV2Response">
+    <wsdl:part name="parameters" element="tns:operationNameCanChangeV2Response">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="inputTypeCanChangeResponse">
+    <wsdl:part name="parameters" element="tns:inputTypeCanChangeResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="operationCanBeAdded">
+    <wsdl:part name="parameters" element="tns:operationCanBeAdded">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="faultCanChangeResponse">
+    <wsdl:part name="parameters" element="tns:faultCanChangeResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="operationNameCanChangeV2">
+    <wsdl:part name="parameters" element="tns:operationNameCanChangeV2">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="outputTypeCanBeAddedResponse">
+    <wsdl:part name="parameters" element="tns:outputTypeCanBeAddedResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="outputTypeCanBeRemovedResponse">
+    <wsdl:part name="parameters" element="tns:outputTypeCanBeRemovedResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="faultCanBeRemoved">
+    <wsdl:part name="parameters" element="tns:faultCanBeRemoved">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="outputTypeCanChange">
+    <wsdl:part name="parameters" element="tns:outputTypeCanChange">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="outputTypeCanBeRemoved">
+    <wsdl:part name="parameters" element="tns:outputTypeCanBeRemoved">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="FaultV2">
+    <wsdl:part name="FaultV2" element="tns:FaultV2">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="faultCanBeRemovedResponse">
+    <wsdl:part name="parameters" element="tns:faultCanBeRemovedResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="inputTypeCanChange">
+    <wsdl:part name="parameters" element="tns:inputTypeCanChange">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="operationCanBeAddedResponse">
+    <wsdl:part name="parameters" element="tns:operationCanBeAddedResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="faultCanBeAdded">
+    <wsdl:part name="parameters" element="tns:faultCanBeAdded">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="faultCanBeAddedResponse">
+    <wsdl:part name="parameters" element="tns:faultCanBeAddedResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="faultCanChange">
+    <wsdl:part name="parameters" element="tns:faultCanChange">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="ServiceContractV2PortType">
+    <wsdl:operation name="inputTypeCanChange">
+      <wsdl:input name="inputTypeCanChange" message="tns:inputTypeCanChange">
+    </wsdl:input>
+      <wsdl:output name="inputTypeCanChangeResponse" message="tns:inputTypeCanChangeResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="operationNameCanChangeV2">
+      <wsdl:input name="operationNameCanChangeV2" message="tns:operationNameCanChangeV2">
+    </wsdl:input>
+      <wsdl:output name="operationNameCanChangeV2Response" message="tns:operationNameCanChangeV2Response">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="outputTypeCanChange">
+      <wsdl:input name="outputTypeCanChange" message="tns:outputTypeCanChange">
+    </wsdl:input>
+      <wsdl:output name="outputTypeCanChangeResponse" message="tns:outputTypeCanChangeResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="outputTypeCanBeAdded">
+      <wsdl:input name="outputTypeCanBeAdded" message="tns:outputTypeCanBeAdded">
+    </wsdl:input>
+      <wsdl:output name="outputTypeCanBeAddedResponse" message="tns:outputTypeCanBeAddedResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="faultCanChange">
+      <wsdl:input name="faultCanChange" message="tns:faultCanChange">
+    </wsdl:input>
+      <wsdl:output name="faultCanChangeResponse" message="tns:faultCanChangeResponse">
+    </wsdl:output>
+      <wsdl:fault name="FaultV2" message="tns:FaultV2">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="operationCanBeAdded">
+      <wsdl:input name="operationCanBeAdded" message="tns:operationCanBeAdded">
+    </wsdl:input>
+      <wsdl:output name="operationCanBeAddedResponse" message="tns:operationCanBeAddedResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="faultCanBeRemoved">
+      <wsdl:input name="faultCanBeRemoved" message="tns:faultCanBeRemoved">
+    </wsdl:input>
+      <wsdl:output name="faultCanBeRemovedResponse" message="tns:faultCanBeRemovedResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="faultCanBeAdded">
+      <wsdl:input name="faultCanBeAdded" message="tns:faultCanBeAdded">
+    </wsdl:input>
+      <wsdl:output name="faultCanBeAddedResponse" message="tns:faultCanBeAddedResponse">
+    </wsdl:output>
+      <wsdl:fault name="FaultV2" message="tns:FaultV2">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="outputTypeCanBeRemoved">
+      <wsdl:input name="outputTypeCanBeRemoved" message="tns:outputTypeCanBeRemoved">
+    </wsdl:input>
+      <wsdl:output name="outputTypeCanBeRemovedResponse" message="tns:outputTypeCanBeRemovedResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceContractV2SoapBinding" type="tns:ServiceContractV2PortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="inputTypeCanChange">
+      <soap:operation soapAction="inputTypeCanChange" style="document"/>
+      <wsdl:input name="inputTypeCanChange">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="inputTypeCanChangeResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="operationNameCanChangeV2">
+      <soap:operation soapAction="operationNameCanChangeV2" style="document"/>
+      <wsdl:input name="operationNameCanChangeV2">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="operationNameCanChangeV2Response">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="outputTypeCanChange">
+      <soap:operation soapAction="outputTypeCanChange" style="document"/>
+      <wsdl:input name="outputTypeCanChange">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="outputTypeCanChangeResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="outputTypeCanBeAdded">
+      <soap:operation soapAction="outputTypeCanBeAdded" style="document"/>
+      <wsdl:input name="outputTypeCanBeAdded">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="outputTypeCanBeAddedResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="faultCanChange">
+      <soap:operation soapAction="faultCanChange" style="document"/>
+      <wsdl:input name="faultCanChange">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="faultCanChangeResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="FaultV2">
+        <soap:fault name="FaultV2" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="operationCanBeAdded">
+      <soap:operation soapAction="operationCanBeAdded" style="document"/>
+      <wsdl:input name="operationCanBeAdded">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="operationCanBeAddedResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="faultCanBeRemoved">
+      <soap:operation soapAction="faultCanBeRemoved" style="document"/>
+      <wsdl:input name="faultCanBeRemoved">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="faultCanBeRemovedResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="faultCanBeAdded">
+      <soap:operation soapAction="faultCanBeAdded" style="document"/>
+      <wsdl:input name="faultCanBeAdded">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="faultCanBeAddedResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="FaultV2">
+        <soap:fault name="FaultV2" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="outputTypeCanBeRemoved">
+      <soap:operation soapAction="outputTypeCanBeRemoved" style="document"/>
+      <wsdl:input name="outputTypeCanBeRemoved">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="outputTypeCanBeRemovedResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiceContractV2">
+    <wsdl:port name="ServiceContractV2Port" binding="tns:ServiceContractV2SoapBinding">
+      <soap:address location="http://localhost:8080/switchyard-adapter-example/ServiceContractV2"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -13,7 +13,7 @@ public interface ServiceContractV1 {
 	 * 
 	 * @return true
 	 */
-	boolean operationCanBeRemoved();
+	Boolean operationCanBeRemoved();
 	
 	/**
 	 * The operation name can change in service contract v2. 
@@ -21,7 +21,7 @@ public interface ServiceContractV1 {
 	 * 
 	 * @return true
 	 */
-	boolean operationNameCanChangeV1();
+	Boolean operationNameCanChangeV1();
 	
 	/**
 	 * The input type of the operation changes in service contract v2.
@@ -30,7 +30,7 @@ public interface ServiceContractV1 {
 	 * @param inputType Input type that changes
 	 * @return true
 	 */
-	boolean inputTypeCanChange(InputTypeV1 inputType);
+	Boolean inputTypeCanChange(InputTypeV1 inputType);
 	
 	/**
 	 * The output type of the operation changes in service contract v2. 
@@ -58,7 +58,7 @@ public interface ServiceContractV1 {
 	 * 
 	 * @return A dummy value ...
 	 */
-	boolean outputTypeCanBeRemoved();
+	Boolean outputTypeCanBeRemoved();
 	
 	/**
 	 * By adding an exception to service contract v2, 
@@ -68,7 +68,7 @@ public interface ServiceContractV1 {
 	 * @param throwException Determines whether an error should be triggered.
 	 * @return Whether an error should be triggered.
 	 */
-	boolean faultCanBeAdded(boolean throwException);
+	Boolean faultCanBeAdded(Boolean throwException);
 	
 	// currently not supported.
 	// boolean anAdditionalfaultCanBeAdded(boolean throwException) throws FaultV1;
@@ -77,7 +77,7 @@ public interface ServiceContractV1 {
 	 * The exception will no longer occurs. 
 	 * Interoperability can be guaranteed.  
 	 */
-	boolean faultCanBeRemoved(Boolean throwException) throws FaultV1;
+	Boolean faultCanBeRemoved(Boolean throwException) throws FaultV1;
 	
 	/**
 	 * The fault type in service contract v2 will change.

@@ -13,7 +13,7 @@ public interface ServiceContractV2 {
 	 * 
 	 * @return true
 	 */
-	boolean operationCanBeAdded();
+	Boolean operationCanBeAdded();
 	
 	/**
 	 * Consumers of service contract v2 have to handle the new fault type. 
@@ -29,7 +29,7 @@ public interface ServiceContractV2 {
 	 * 
 	 * @return true
 	 */
-	boolean operationNameCanChangeV2();
+	Boolean operationNameCanChangeV2();
 
 	/**
 	 * Consumers of service contract v2 can use the changed input type.
@@ -37,7 +37,7 @@ public interface ServiceContractV2 {
 	 * @param inputType Input type of service contract v2
 	 * @return true
 	 */
-	boolean inputTypeCanChange(InputTypeV2 inputType);
+	Boolean inputTypeCanChange(InputTypeV2 inputType);
 
 	/**
 	 * Consumers of service contract v2 will receive the changed ouput type.
@@ -60,7 +60,7 @@ public interface ServiceContractV2 {
 	 * 
 	 * @return true
 	 */
-	boolean outputTypeCanBeRemoved();
+	Boolean outputTypeCanBeRemoved();
 
 	/**
 	 * By adding an exception to service contract v2, the service might become
@@ -70,7 +70,7 @@ public interface ServiceContractV2 {
 	 * @param throwException Determines whether an error should be triggered.
 	 * @return Whether an error should be triggered.
 	 */
-	boolean faultCanBeAdded(Boolean throwException) throws FaultV2;
+	Boolean faultCanBeAdded(Boolean throwException) throws FaultV2;
 
 	// currently not supported.
 	// boolean anAdditionalfaultCanBeAdded(boolean throwException) throws FaultV1, FaultV2;
@@ -81,5 +81,5 @@ public interface ServiceContractV2 {
 	 * 
 	 * @return true
 	 */
-	boolean faultCanBeRemoved();
+	Boolean faultCanBeRemoved();
 }

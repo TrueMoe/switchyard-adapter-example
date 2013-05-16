@@ -9,17 +9,17 @@ import org.switchyard.component.bean.Service;
 public class ServiceContractV2Bean implements ServiceContractV2 {
 	
 	@Override
-	public boolean operationCanBeAdded() {
+	public Boolean operationCanBeAdded() {
 		return true;
 	}
 
 	@Override
-	public boolean operationNameCanChangeV2() {
+	public Boolean operationNameCanChangeV2() {
 		return true;
 	}
 
 	@Override
-	public boolean inputTypeCanChange(InputTypeV2 inputType) {
+	public Boolean inputTypeCanChange(InputTypeV2 inputType) {
 		return true;
 	}
 
@@ -34,12 +34,12 @@ public class ServiceContractV2Bean implements ServiceContractV2 {
 	}
 
 	@Override
-	public boolean outputTypeCanBeRemoved() {
+	public Boolean outputTypeCanBeRemoved() {
 		return true;
 	}
 
 	@Override
-	public boolean faultCanBeAdded(Boolean throwException) throws FaultV2 {
+	public Boolean faultCanBeAdded(Boolean throwException) throws FaultV2 {
 		if (throwException) {
 			throw new FaultV2("Should throw exception");
 		}
@@ -47,7 +47,7 @@ public class ServiceContractV2Bean implements ServiceContractV2 {
 	}
 
 	@Override
-	public boolean faultCanBeRemoved() {
+	public Boolean faultCanBeRemoved() {
 		return true;
 	}
 
