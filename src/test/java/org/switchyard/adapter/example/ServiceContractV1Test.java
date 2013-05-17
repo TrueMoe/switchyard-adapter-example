@@ -8,7 +8,6 @@ import org.switchyard.adapter.example.domain.InputTypeV1;
 import org.switchyard.adapter.example.domain.OutputTypeV1;
 import org.switchyard.adapter.example.fault.FaultV1;
 import org.switchyard.adapter.example.fault.FaultV2;
-import org.switchyard.component.bean.BeanComponentException;
 import org.switchyard.component.test.mixins.cdi.CDIMixIn;
 import org.switchyard.metadata.java.JavaService;
 import org.switchyard.test.InvocationFaultException;
@@ -103,14 +102,13 @@ public class ServiceContractV1Test {
 	public void testFault_FaultCanBeAdded() {
 		try {
 			service.operation("faultCanBeAdded")
-				.expectedOutputType(JavaService.toMessageType(OutputTypeV1.class))
+				.expectedOutputType(JavaService.toMessageType(Boolean.class))
 				.inputType(JavaService.toMessageType(Boolean.class))
 				.sendInOut(true);
 			Assert.fail("V1: faultCanBeAdded");
 		} catch (InvocationFaultException e) {
-			BeanComponentException bce = (BeanComponentException) e.getCause();
-			Assert.assertEquals(FaultV2.class, bce.getCause().getClass()); // exception defined in service contract v2
-			Assert.assertEquals("Should throw exception", bce.getCause().getMessage());
+			Assert.assertEquals(FaultV2.class, e.getCause().getClass()); // exception defined in service contract v2
+			Assert.assertEquals("Should throw exception", e.getCause().getMessage());
 		}
 	}
 

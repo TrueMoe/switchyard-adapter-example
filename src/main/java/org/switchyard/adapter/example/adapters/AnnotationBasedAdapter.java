@@ -5,7 +5,7 @@ import org.switchyard.annotations.Adapter;
 import org.switchyard.metadata.ServiceInterface;
 import org.switchyard.metadata.ServiceOperation;
 
-public class ServiceContractAdapter {
+public class AnnotationBasedAdapter {
 
 	@Adapter(contract = ServiceContractV1.class)
 	public ServiceOperation lookup(String consumerOperation, ServiceInterface targetInterface) {

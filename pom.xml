@@ -10,7 +10,6 @@
 	<description>Example for the adapter implementation for SwitchYard</description>
 	<properties>
 		<switchyard.version>1.0.0-SNAPSHOT</switchyard.version>
-		<!-- <switchyard.version>0.8.0.Final</switchyard.version> -->
 	</properties>
 	<dependencies>
 		<dependency>
@@ -44,6 +43,11 @@
 			<artifactId>switchyard-transform</artifactId>
 			<version>${switchyard.version}</version>
 		</dependency>
+		<dependency>
+            <groupId>org.switchyard</groupId>
+            <artifactId>switchyard-adapter</artifactId>
+            <version>${switchyard.version}</version>
+        </dependency>
 		<dependency>
 			<groupId>org.switchyard</groupId>
 			<artifactId>switchyard-validate</artifactId>
@@ -96,9 +100,7 @@
 				</executions>
 				<configuration>
 					<scannerClassNames>
-						<!-- <param>org.switchyard.component.bean.config.model.BeanSwitchYardScanner</param> -->
 						<param>org.switchyard.transform.config.model.TransformSwitchYardScanner</param>
-						<!-- <param>org.switchyard.adapter.config.model.AdapterSwitchYardScanner</param> -->
 					</scannerClassNames>
 				</configuration>
 			</plugin>

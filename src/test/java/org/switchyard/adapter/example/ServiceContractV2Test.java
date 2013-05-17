@@ -7,7 +7,6 @@ import org.switchyard.Message;
 import org.switchyard.adapter.example.domain.InputTypeV2;
 import org.switchyard.adapter.example.domain.OutputTypeV2;
 import org.switchyard.adapter.example.fault.FaultV2;
-import org.switchyard.component.bean.BeanComponentException;
 import org.switchyard.component.test.mixins.cdi.CDIMixIn;
 import org.switchyard.metadata.java.JavaService;
 import org.switchyard.test.InvocationFaultException;
@@ -105,9 +104,8 @@ public class ServiceContractV2Test {
 				.sendInOut(true);
 			Assert.fail("V2: faultCanBeAdded");
 		} catch (InvocationFaultException e) {
-			BeanComponentException bce = (BeanComponentException) e.getCause();
-			Assert.assertEquals(FaultV2.class, bce.getCause().getClass());
-			Assert.assertEquals("Should throw exception", bce.getCause().getMessage());
+			Assert.assertEquals(FaultV2.class, e.getCause().getClass());
+			Assert.assertEquals("Should throw exception", e.getCause().getMessage());
 		}
 	}
 
@@ -143,9 +141,8 @@ public class ServiceContractV2Test {
 				.sendInOut(null);
 			Assert.fail("V2: faultCanChange");
 		} catch (InvocationFaultException e) {
-			BeanComponentException bce = (BeanComponentException) e.getCause();
-			Assert.assertEquals(FaultV2.class, bce.getCause().getClass());
-			Assert.assertEquals("Should throw exception", bce.getCause().getMessage());
+			Assert.assertEquals(FaultV2.class, e.getCause().getClass());
+			Assert.assertEquals("Should throw exception", e.getCause().getMessage());
 		}
 	}
 }
